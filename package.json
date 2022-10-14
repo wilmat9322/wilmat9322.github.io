@@ -1,6 +1,6 @@
 {
   "name": "react-portfolio-2022",
-  "homepage": "https://github.com/wilmat9322/Portfolio2022Leaders.git",
+  "homepage": "https://wilmat9322.github.io/Portfolio2022Leaders/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -24,8 +24,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "predeploy":"npm run build",
-    "deploy":"gh-pages -d build"
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
