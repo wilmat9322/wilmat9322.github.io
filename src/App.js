@@ -1,24 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react'
+import GlobalStyle from './globalStyles' //Modulo que carga estilos globales NO TOCAR
+import {Navbar, Sidebar, Hero, About, Footer} from './components/manager';
+import {BrowserRouter as Router} from 'react-router-dom'
+import { sectionHero } from './data/homeData';
+import { sectionAbout } from './data/homeData';
 
-function App() {
+const App = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggle = () => {
+    setIsOpen(!isOpen);
+  }
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <GlobalStyle /> 
+      <Sidebar isOpen={isOpen} toggle={toggle}/>
+      <Navbar toggle={toggle}/>
+      <Hero {...sectionHero}/>
+      <About {...sectionAbout}/>
+      <Footer/>
+   </Router>
   );
 }
 
