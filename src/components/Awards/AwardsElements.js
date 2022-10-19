@@ -2,7 +2,7 @@ import styled from "styled-components";
 import {Link} from 'react-scroll'
 import {motion} from 'framer-motion';
 
-export const AboutSec = styled.div` 
+export const AwardsSec = styled.div` 
 padding: 70px 0px 0px; 
 background: #000;
     
@@ -32,7 +32,7 @@ background: #000;
     }
 `;
 
-export const AboutRow = styled.div` 
+export const AwardsRow = styled.div` 
     display: flex;
     margin: 0 -15px 0px -15px; 
     flex-wrap: wrap; 
@@ -40,7 +40,7 @@ export const AboutRow = styled.div`
     flex-direction: ${({ reverse }) => (reverse ? 'row-reverse' : 'row')};
 `;
 
-export const AboutColumn = styled.div`  
+export const AwardsColumn = styled.div`  
     bottom: 0;
     padding-top: 0px;
     padding-left: 0px; 
@@ -61,7 +61,7 @@ export const TextWrapper = styled.div`
     width: 100%;
     padding-top: 0px;
     padding-bottom: 0px;
-    padding-left: 50px;
+
     @media screen and (max-width: 968px) {
     padding-bottom: 40px;  
     padding-left: 0px; 
@@ -155,7 +155,8 @@ export const Text = styled(motion.p)`
 `;
 
 export const ImgWrapper = styled.div` 
-    max-width: 900px;
+    padding-left: 50px;
+    max-width: 1000px;
     max-height: 100%; 
     height: 100%;
     bottom: 0;
@@ -164,22 +165,23 @@ export const ImgWrapper = styled.div`
 
     @media screen and (max-width: 1400px) {
     max-width: 400px;
+    padding-left: 0px;
     }
 
     @media screen and (max-width: 968px) {
     max-width: 500px;
+    padding-left: 0px;
     }
 `;
 
 export const Img = styled.img`
-    padding-right: 0;
     border: 0;
     max-width: 100%;
     max-height: 500px;
     display: inline-block; 
     object-position: bottom;
     vertical-align: middle; 
-    border-radius: 100%;
+    border-radius: 5%;
     
     @media screen and (max-width: 1200px) {
         max-width: 100%;

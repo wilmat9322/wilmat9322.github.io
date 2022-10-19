@@ -40,6 +40,7 @@ import {
               transition={{ duration: 1 }}
               >
                {heading}
+          
               </Heading>
                 <SubHeading
                 initial={{ opacity: 0 }}

@@ -2,7 +2,7 @@ import styled from "styled-components";
 import {Link} from 'react-scroll'
 import {motion} from 'framer-motion';
 
-export const AboutSec = styled.div` 
+export const ProjectsSec = styled.div` 
 padding: 70px 0px 0px; 
 background: #000;
     
@@ -32,15 +32,15 @@ background: #000;
     }
 `;
 
-export const AboutRow = styled.div` 
+export const ProjectsRow = styled.div` 
     display: flex;
-    margin: 0 -15px 0px -15px; 
+    margin: 0 15px 0px 15px; 
     flex-wrap: wrap; 
     align-items: center; 
     flex-direction: ${({ reverse }) => (reverse ? 'row-reverse' : 'row')};
 `;
 
-export const AboutColumn = styled.div`  
+export const ProjectsColumn = styled.div`  
     bottom: 0;
     padding-top: 0px;
     padding-left: 0px; 
@@ -61,7 +61,6 @@ export const TextWrapper = styled.div`
     width: 100%;
     padding-top: 0px;
     padding-bottom: 0px;
-    padding-left: 50px;
     @media screen and (max-width: 968px) {
     padding-bottom: 40px;  
     padding-left: 0px; 
@@ -154,6 +153,40 @@ export const Text = styled(motion.p)`
     }
 `;
 
+export const Tools = styled.div`
+    margin-top: 10px;
+    margin-bottom: 10px;
+`;
+
+export const ToolsHeading = styled.p`
+    color: #fff;
+    font-weight: bold;
+`;
+
+export const ToolList = styled.ul`
+
+`;
+
+export const Tool = styled.li`
+
+`;
+
+export const ToolImage = styled.img`
+    margin-right: 5px;
+    border: 0;
+    max-width: 6%;
+    max-height: 500px;
+    display: inline-block; 
+    object-position: bottom;
+    vertical-align: middle; 
+    border-radius: 8%;
+    cursor: pointer;
+`;
+
+export const ToolWrapper = styled.a`
+
+`;
+
 export const ImgWrapper = styled.div` 
     max-width: 900px;
     max-height: 100%; 
@@ -171,6 +204,52 @@ export const ImgWrapper = styled.div`
     }
 `;
 
+export const ButtonContainer = styled.a`
+    text-decoration: none;
+`
+
+export const Button = styled.button`
+    border-radius: 30px; 
+    background: #DA2D2D; 
+    white-space: nowrap; 
+    padding: 10px 20px; 
+    color: #fff; 
+    font-size: 14px; 
+    font-weight: bold; 
+    outline: none; 
+    border: none; 
+    cursor: pointer; 
+    width: 100%;
+    max-width: 140px;
+    margin-top: 15px;
+    &:hover {  
+        transition: all 0.3s ease-out;
+        color: #fff; 
+        background: red; 
+    }
+
+    @media screen and (max-width: 1200px) {
+    margin-top: 20px;
+    margin-bottom: -60px;
+    width: 100%;
+    }
+
+    @media screen and (max-width: 968px) {
+    font-size: 18px;
+    margin-top: 50px;
+    max-width: 200px;
+    width: 100%;
+    }
+
+    @media screen and (max-width: 600px) {
+    font-size: 15px;
+    margin: 30px auto 0 auto;
+    width: 100%;
+    max-width: 500px;
+    }
+`;
+
+
 export const Img = styled.img`
     padding-right: 0;
     border: 0;
@@ -179,7 +258,7 @@ export const Img = styled.img`
     display: inline-block; 
     object-position: bottom;
     vertical-align: middle; 
-    border-radius: 100%;
+    border-radius: 8%;
     
     @media screen and (max-width: 1200px) {
         max-width: 100%;

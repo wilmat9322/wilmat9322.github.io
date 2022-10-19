@@ -1,6 +1,5 @@
 import React, {useState, useEffect} from 'react';
-import Button from '../../globalStyles'
-import { CgMenuGridO, CgWindows } from "react-icons/cg";
+import { CgMenuGridO } from "react-icons/cg";
 import { RiCodeBoxFill } from "react-icons/ri";
 import { IconContext } from 'react-icons/lib';
 import { MdEmail } from "react-icons/md";
@@ -88,7 +87,7 @@ const toggleHome = () => {
                 </NavItem>
             </NavMenu>
             <NavBtn>
-                <NavBtnLink to="/signin">Contact me 
+                <NavBtnLink href="mailto:wmato002@odu.edu">Contact me 
                 <IconContext.Provider
                     value={{
                       size: "18px",
