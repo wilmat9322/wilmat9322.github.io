@@ -80,7 +80,9 @@ const toggleHome = () => {
                     >Skills</NavLinks>
                 </NavItem>
                 <NavItem>
-                    <NavLinks to="projects">Projects</NavLinks>
+                    <NavLinks to="projects"
+                     smooth={true} duration={500} spy={true} exact='true' offset={-80}
+                    >Projects</NavLinks>
                 </NavItem>
                 <NavItem>
                     <NavLinks to="">Experiences</NavLinks>
