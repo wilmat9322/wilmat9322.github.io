@@ -75,8 +75,7 @@ const toggleHome = () => {
                     >About</NavLinks>
                 </NavItem>
                 <NavItem>
-                    <NavLinks to="skills" 
-                    
+                    <NavLinks to="/signin"  
                     >Skills</NavLinks>
                 </NavItem>
                 <NavItem>

@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import GlobalStyle from './globalStyles' //Modulo que carga estilos globales NO TOCAR
-import {Navbar, Sidebar, Hero, About, Awards, Projects, Footer} from './components/manager';
+import {Navbar, Sidebar, Hero, About, Awards, Projects, Contact, Footer} from './components/manager';
 import {BrowserRouter as Router} from 'react-router-dom'
 import { sectionHero, sectionAbout, sectionAwards, sectionProjects } from './data/homeData';
 
@@ -19,7 +19,8 @@ const App = () => {
       <About {...sectionAbout}/>
       <Awards {...sectionAwards}/>
       <Projects {...sectionProjects}/>
-      <Footer/>
+      <Contact />
+      <Footer />
    </Router>
   );
 }
