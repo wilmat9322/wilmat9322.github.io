@@ -11,7 +11,12 @@ import {
     InputBox,
     InputMessage,
     ButtonContainer, 
-    Button
+    MessageContainer,
+    Button,
+    LabelName,
+    LabelEmail,
+    LabelPhone,
+    LabelMessage,
 } from './ContactElements';
 
 const Contact = () => {
@@ -20,26 +25,34 @@ const Contact = () => {
     <ContactSec>
         <Container>
             <ContactContainer>
-                    <TextWrapper>
+                    
+                    <ContactRow>
+                        <ContactColumn>
+                        <TextWrapper>
                         <Heading>
                             Contact Me
                         </Heading>
                         <SubHeading>
-                        Fill out the folling form
+                        Fill out the following form
                         </SubHeading>
                     </TextWrapper>
-                    <ContactRow>
-                        <ContactColumn>
-                            <InputBox placeholder="Name *" required/>
-                            <InputBox placeholder="Email *" required/>
-                            <InputBox placeholder="Phone"/>
+                            <LabelName>Name</LabelName>
+                            <InputBox type="text" placeholder="Name *" required/>
+                            <LabelEmail>Email</LabelEmail>
+                            <InputBox type="email" placeholder="Email *" required/>
+                            <LabelPhone>Phone Number</LabelPhone>
+                            <InputBox type="number" placeholder="Phone"/>
                         </ContactColumn>
                         <ContactColumn>
-                            <InputMessage placeholder="Message *" textarea=""required/>
-                        </ContactColumn>
-                        <ButtonContainer>
-                                <Button>This</Button>
+                            <MessageContainer>
+                            <LabelMessage>Message</LabelMessage>
+                            <InputMessage type="message" placeholder="Message *" rows="4" cols="50" maxlength={50}/>
+                            </MessageContainer>
+                            <ButtonContainer>
+                                <Button type="submit" value="Submit">Submit</Button>
                             </ButtonContainer>
+                        </ContactColumn>
+                       
                     </ContactRow>
             </ContactContainer>
         </Container>

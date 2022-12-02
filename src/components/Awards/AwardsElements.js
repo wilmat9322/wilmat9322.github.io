@@ -34,7 +34,7 @@ background: #000;
 
 export const AwardsRow = styled.div` 
     display: flex;
-    margin: 0 -15px 0px -15px; 
+    margin: 0 15px 0px 15px; 
     flex-wrap: wrap; 
     align-items: center; 
     flex-direction: ${({ reverse }) => (reverse ? 'row-reverse' : 'row')};

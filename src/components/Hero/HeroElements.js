@@ -36,7 +36,7 @@ background-size: cover;
 
 export const HeroRow = styled.div` 
     display: flex;
-    margin: 0 -15px 0px -15px; 
+    margin: 0 15px 0px 15px; 
     flex-wrap: wrap; 
     align-items: center; 
     flex-direction: ${({ reverse }) => (reverse ? 'row-reverse' : 'row')};
@@ -185,7 +185,7 @@ margin-right: 10px;
 
     @media screen and (max-width: 600px) {
     font-size: 15px;
-    margin: 30px auto 0 auto;
+    margin: 20px auto 0 auto;
     width: 100%;
     max-width: 500px;
     }
@@ -226,6 +226,6 @@ export const Img = styled(motion.img)`
 
     @media screen and (max-width: 600px) {
     font-size: 15px;
-    margin-top: -20px;
+    margin-top: -30px;
     }
 `;

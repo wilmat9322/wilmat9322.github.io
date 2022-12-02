@@ -34,7 +34,7 @@ background: #000;
 
 export const AboutRow = styled.div` 
     display: flex;
-    margin: 0 -15px 0px -15px; 
+    margin: 0 15px 0px 15px; 
     flex-wrap: wrap; 
     align-items: center; 
     flex-direction: ${({ reverse }) => (reverse ? 'row-reverse' : 'row')};
@@ -43,7 +43,6 @@ export const AboutRow = styled.div`
 export const AboutColumn = styled.div`  
     bottom: 0;
     padding-top: 0px;
-    padding-left: 0px; 
     flex: 1;
     max-width: 50%; 
     flex-basis: 50%; 
@@ -66,6 +65,11 @@ export const TextWrapper = styled.div`
     padding-bottom: 40px;  
     padding-left: 0px; 
     }
+    @media screen and (max-width: 600px) {
+    padding-left: 0px;
+    padding-right: 0px;
+    }
+
 `;
 
 export const Heading = styled(motion.h1)` 

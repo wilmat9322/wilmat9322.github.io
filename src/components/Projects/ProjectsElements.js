@@ -43,7 +43,6 @@ export const ProjectsRow = styled.div`
 export const ProjectsColumn = styled.div`  
     bottom: 0;
     padding-top: 0px;
-    
     flex: 1;
     max-width: 50%; 
     flex-basis: 50%; 
@@ -65,6 +64,10 @@ export const TextWrapper = styled.div`
     @media screen and (max-width: 968px) {
     padding-bottom: 40px;  
     padding-left: 0px; 
+    }
+    @media screen and (max-width: 600px) {
+    padding-left: 0px;
+    padding-right: 0px;
     }
 `;
 
@@ -157,11 +160,22 @@ export const Text = styled(motion.p)`
 export const Tools = styled.div`
     margin-top: 10px;
     margin-bottom: 10px;
+
 `;
 
 export const ToolsHeading = styled.p`
     color: #fff;
     font-weight: bold;
+    @media screen and (max-width: 600px) {
+        margin-top: 5px;
+        margin-left: 15px;
+        margin-right: 15px;
+        font-size: 16px;
+        width: 95%;
+        flex-basis: 100%;
+        display: flex;
+        flex-direction: column;
+    }
 `;
 
 export const ToolList = styled.ul`
@@ -169,7 +183,6 @@ export const ToolList = styled.ul`
 `;
 
 export const Tool = styled.li`
-
 `;
 
 export const ToolImage = styled.img`
@@ -182,6 +195,13 @@ export const ToolImage = styled.img`
     vertical-align: middle; 
     border-radius: 8%;
     cursor: pointer;
+    @media screen and (max-width: 600px) {
+        max-width: 13%;
+        width: 100%;
+        margin-top: 5px;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
 `;
 
 export const ToolWrapper = styled.a`
@@ -190,7 +210,7 @@ export const ToolWrapper = styled.a`
 
 export const ButtonContainer = styled.a`
     text-decoration: none;
-`
+  `
 
 export const Button = styled.button`
     border-radius: 30px; 
@@ -220,9 +240,10 @@ export const Button = styled.button`
 
     @media screen and (max-width: 968px) {
     font-size: 18px;
-    margin-top: 50px;
     max-width: 200px;
     width: 100%;
+    margin: 20px auto 0 auto;
+    
     }
 
     @media screen and (max-width: 600px) {
