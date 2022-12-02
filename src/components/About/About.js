@@ -59,7 +59,7 @@ import {
             </AboutColumn>
             <AboutColumn>
               <ImgWrapper>
-                <Img src={img} alt="William Matos" draggable="false"/>
+                <Img src={img} alt="William Matos" whileTap={{ scale: 0.9}} draggable="false"/>
               </ImgWrapper>
             </AboutColumn>
           </AboutRow>

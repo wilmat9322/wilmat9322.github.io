@@ -72,7 +72,6 @@ export const TextWrapper = styled.div`
 `;
 
 export const Heading = styled(motion.h5)` 
-    
     font-size: 25px; 
     font-weight: 600; 
     color: #fff; 
@@ -125,10 +124,34 @@ export const SubHeading = styled(motion.h5)`
 `;
 
 export const InputBox = styled.input`
+    display: flex;
     padding: 10px;
     margin-top: 10px;
     display: flex;
     width: 80%;
+
+    @media screen and (max-width: 1200px) {
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: -60px;
+    width: 100%;
+    }
+
+    @media screen and (max-width: 968px) {
+    display: flex;
+    font-size: 18px;
+    margin-top: 50px;
+    max-width: 200px;
+    width: 100%;
+    }
+
+    @media screen and (max-width: 600px) {
+    display: flex;
+    font-size: 15px;
+    margin: 0px auto 0 auto;
+    width: 100%;
+    max-width: 500px;
+    }
 `  
 
 export const InputMessage = styled.textarea`

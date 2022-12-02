@@ -156,7 +156,7 @@ white-space: nowrap;
 padding: 10px 20px; 
 color: #fff; 
 font-size: 18px; 
-font-weight: initial; 
+font-weight: bold; 
 outline: none; 
 border: none; 
 cursor: pointer; 

@@ -43,7 +43,7 @@ export const ProjectsRow = styled.div`
 export const ProjectsColumn = styled.div`  
     bottom: 0;
     padding-top: 0px;
-    padding-left: 0px; 
+    
     flex: 1;
     max-width: 50%; 
     flex-basis: 50%; 
@@ -61,6 +61,7 @@ export const TextWrapper = styled.div`
     width: 100%;
     padding-top: 0px;
     padding-bottom: 0px;
+    padding-left: 50px;
     @media screen and (max-width: 968px) {
     padding-bottom: 40px;  
     padding-left: 0px; 
@@ -187,23 +188,6 @@ export const ToolWrapper = styled.a`
 
 `;
 
-export const ImgWrapper = styled.div` 
-    max-width: 900px;
-    max-height: 100%; 
-    height: 100%;
-    bottom: 0;
-    display: flex;
-    justify-content: flex-start;
-
-    @media screen and (max-width: 1400px) {
-    max-width: 400px;
-    }
-
-    @media screen and (max-width: 968px) {
-    max-width: 500px;
-    }
-`;
-
 export const ButtonContainer = styled.a`
     text-decoration: none;
 `
@@ -249,8 +233,26 @@ export const Button = styled.button`
     }
 `;
 
+export const ImgWrapper = styled.div` 
+    max-width: 1200px;
+    max-height: 100%; 
+    height: 100%;
+    bottom: 0;
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    
 
-export const Img = styled.img`
+    @media screen and (max-width: 1400px) {
+    max-width: 400px;
+    }
+
+    @media screen and (max-width: 968px) {
+    max-width: 500px;
+    }
+`;
+
+export const Img = styled(motion.img)`
     padding-right: 0;
     border: 0;
     max-width: 100%;
@@ -258,7 +260,7 @@ export const Img = styled.img`
     display: inline-block; 
     object-position: bottom;
     vertical-align: middle; 
-    border-radius: 8%;
+    border-radius: 10%;
     
     @media screen and (max-width: 1200px) {
         max-width: 100%;

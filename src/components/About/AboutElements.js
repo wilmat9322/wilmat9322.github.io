@@ -171,7 +171,7 @@ export const ImgWrapper = styled.div`
     }
 `;
 
-export const Img = styled.img`
+export const Img = styled(motion.img)`
     padding-right: 0;
     border: 0;
     max-width: 100%;
