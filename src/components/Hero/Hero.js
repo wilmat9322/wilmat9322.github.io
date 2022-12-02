@@ -64,7 +64,7 @@ const Hero = (props) => {
                 transition={{ duration: 3 }}
               >{text}<Span></Span><Typewriter
               options={{
-              strings: ['web_developer', 'cybersecurity_student', 'computer_science_graduate', 'graduate_stuent'],
+              strings: ['Graduate Student', 'Cybersecurity Student', 'Computer Science Graduate', 'Web Developer'],
               autoStart: true,
               loop: true,
               delay: 100,

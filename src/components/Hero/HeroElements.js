@@ -123,6 +123,8 @@ export const Text = styled(motion.p)`
     font-weight: 500;
     width: 100%;
     color: #fff;
+    display: flex;
+    flex-direction: column;
 
     @media screen and (max-width: 968px) {
         font-size: 3.5vw;
