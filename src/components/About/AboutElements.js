@@ -166,10 +166,6 @@ export const ImgWrapper = styled.div`
     display: flex;
     justify-content: flex-start;
 
-    @media screen and (max-width: 1400px) {
-    max-width: 400px;
-    }
-
     @media screen and (max-width: 968px) {
     max-width: 500px;
     }

@@ -5,8 +5,6 @@ import {motion} from 'framer-motion';
 export const ContactSec = styled.div` 
 padding: 70px 0px 0px; 
 background: #000;
-height: 100%; 
-background-size: cover; 
     
     @media screen and (max-width: 1200px) {
     padding-top: 20px;
@@ -17,7 +15,7 @@ background-size: cover;
     bottom: 0; 
     }
     
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 968px) {
     padding-top: 20px;
     max-width: 100%;
     flex-basis: 100%;
@@ -35,11 +33,8 @@ background-size: cover;
 `;
 
 export const ContactContainer = styled.div`
-display: flex;
     margin: 0 15px 0px 15px; 
-    flex-wrap: wrap; 
-    align-items: center; 
-    flex-direction: ${({ reverse }) => (reverse ? 'row-reverse' : 'row')};
+    flex-wrap: wrap;
 `  
 
 export const ContactRow = styled.div` 
@@ -58,6 +53,7 @@ export const ContactColumn = styled.div`
     max-width: 50%; 
     flex-basis: 50%; 
     
+    
     @media screen and (max-width: 968px) {
         max-width: 100%;
         flex-basis: 100%;
@@ -75,9 +71,21 @@ export const ContactColumn = styled.div`
 `;
 
 export const TextWrapper = styled.div` 
-    padding-top: 0;
+    max-width: 968px; 
+    width: 100%;
+    padding-top: 0px;
     padding-bottom: 0px;
-    text-align: center;
+    padding-left: 50px;
+ 
+    @media screen and (max-width: 968px) {
+    padding-left: 0px;
+    padding-right: 0px;
+    }
+
+    @media screen and (max-width: 600px) {
+    padding-left: 0px;
+    padding-right: 0px;
+    }
 `;
 
 export const Heading = styled(motion.h1)` 
@@ -86,7 +94,7 @@ export const Heading = styled(motion.h1)`
     line-height: 1; 
     color: #fff; 
     width: 100%; 
-    
+    text-align: center;
     @media screen and (max-width: 968px) {
         justify:center;
         text-align: center;
@@ -97,7 +105,7 @@ export const Heading = styled(motion.h1)`
     @media screen and (max-width: 768px) {
         justify:center;
         text-align: center;
-        margin-top: 10px;
+        font-size: 60px;
         width: 100%;
     }
     
@@ -111,21 +119,22 @@ export const Heading = styled(motion.h1)`
 `;
 
 export const SubHeading = styled(motion.p)` 
-    margin: 10px 0 10px 0; 
+    margin-top: 10px; 
+    margin-bottom: 30px;
     font-size: 26px; 
     font-weight: 600;
     width: 100%;
     line-height: 1.2;
     color: #fff; 
+    text-align: center;
     
     @media screen and (max-width: 968px) {
         font-size: 30px;
-        margin-left: 15px;
-        margin-right: 15px;
-        width: 100%;
+        max-width: 100%;
         flex-basis: 100%;
         display: flex;
-        flex-direction: column;
+        flex-direction: column; 
+        bottom: 0;
     }
     
     @media screen and (max-width: 600px) {
@@ -138,30 +147,24 @@ export const SubHeading = styled(motion.p)`
         flex-direction: column;
     }
 `;
+
 export const InputBox = styled.input`
     display: flex;
     padding: 10px;
-    margin-top: 30px;
+    margin-bottom: 10px;
     display: flex;
-    width: 80%;
+    width: 90%;
     border-color: red;
     &:focus {
     outline: none;
     border-color: red;
   }
 
-    @media screen and (max-width: 1200px) {
-    display: flex;
-    margin-top: 20px;
-    margin-bottom: -60px;
-    width: 100%;
-    }
 
     @media screen and (max-width: 968px) {
     font-size: 15px;
     margin: 0px auto 10px auto;
     width: 100%;
-    max-width: 600px;
     display: flex;
     flex-direction: column; 
     }
@@ -196,9 +199,10 @@ export const InputMessage = styled.textarea`
 
 export const ButtonContainer = styled.a`
     text-decoration: none;
-    margin: 0 auto 0 auto;
+    margin: 0px auto 0 auto;
     max-width: 150px;
     width: 100%;
+    float: right;
 `
 
 export const Button = styled.button`
@@ -219,12 +223,6 @@ export const Button = styled.button`
         transition: all 0.3s ease-out;
         color: #fff; 
         background: red; 
-    }
-
-    @media screen and (max-width: 1200px) {
-    margin-top: 20px;
-    margin-bottom: -60px;
-    width: 100%;
     }
 
     @media screen and (max-width: 968px) {

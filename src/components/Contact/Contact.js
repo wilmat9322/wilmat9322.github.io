@@ -25,23 +25,23 @@ const Contact = () => {
     <ContactSec>
         <Container>
             <ContactContainer>
-                    
-                    <ContactRow>
-                        <ContactColumn>
-                        <TextWrapper>
-                        <Heading>
-                            Contact Me
+            <Heading>
+                    Contact Me
                         </Heading>
                         <SubHeading>
                         Fill out the following form
                         </SubHeading>
+                    <ContactRow>
+                        <ContactColumn>
+                        <TextWrapper>
+                        
                     </TextWrapper>
                             <LabelName>Name</LabelName>
                             <InputBox type="text" placeholder="Name *" required/>
                             <LabelEmail>Email</LabelEmail>
                             <InputBox type="email" placeholder="Email *" required/>
                             <LabelPhone>Phone Number</LabelPhone>
-                            <InputBox type="number" placeholder="Phone"/>
+                            <InputBox type="tel" placeholder="Phone Number" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required/>
                         </ContactColumn>
                         <ContactColumn>
                             <MessageContainer>

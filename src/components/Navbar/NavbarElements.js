@@ -50,7 +50,6 @@ export const NavLogo = styled(LinkR)`
     &:hover {
     color: #F05454;
     cursor: pointer;
-	
     }
 `;
 
@@ -93,7 +92,12 @@ export const NavLinks = styled(LinkS)`
     width: 80%;
     align-items: center;
     justify-content: center;
-    
+    &:hover {
+    color: #F05454;
+    cursor: pointer;
+    border-bottom: 2px solid #F05454;
+    }
+
 &.active {
     color: #F05454;
 	border-bottom: 2px solid #F05454;
