@@ -120,7 +120,7 @@ export const SubHeading = styled(motion.p)`
 
 export const Text = styled(motion.p)` 
     font-size: 20px; 
-    font-weight: 400;
+    font-weight: 500;
     width: 100%;
     color: #fff;
 
@@ -132,7 +132,7 @@ export const Text = styled(motion.p)`
         flex-direction: column; 
         bottom: 0;
     }
-    
+
     @media screen and (max-width: 600px) {
         margin-left: 15px;
         margin-right: 15px;
@@ -143,6 +143,9 @@ export const Text = styled(motion.p)`
         flex-direction: column;
     }
 `;
+
+export const Span = styled.span`
+    `
 
 export const BtnLink = styled.a`
     text-decoration: none;

@@ -176,7 +176,7 @@ export const Img = styled.img`
     display: inline-block; 
     object-position: bottom;
     vertical-align: middle; 
-    border-radius: 5%;
+    border-radius: 10%;
     
     @media screen and (max-width: 1200px) {
         max-width: 100%;

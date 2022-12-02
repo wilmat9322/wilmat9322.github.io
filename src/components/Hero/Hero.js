@@ -3,6 +3,8 @@ import { Container } from '../../globalStyles'
 import { MdWork } from "react-icons/md";
 import { VscGithub } from "react-icons/vsc";
 import { IconContext } from 'react-icons/lib';
+import Typewriter from 'typewriter-effect';
+import TypeWriterEffect from 'react-typewriter-effect';
 
 import {
   HeroSec,
@@ -15,7 +17,8 @@ import {
   Button,
   ImgWrapper,
   Img,
-  Text
+  Text,
+  Span
 } from './HeroElements';
 
 const Hero = (props) => {
@@ -59,7 +62,15 @@ const Hero = (props) => {
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ duration: 3 }}
-              >{text}</Text>
+              >{text}<Span></Span><Typewriter
+              options={{
+              strings: ['web_developer', 'cybersecurity_student', 'computer_science_graduate', 'graduate_stuent'],
+              autoStart: true,
+              loop: true,
+              delay: 100,
+              cursor: "|",
+                        }}/></Text>
+              
                 <BtnLink
                     href="https://drive.google.com/file/d/12oFcGkvyTOmO4tnotnTi-GO6eMmAcWmw/view?usp=sharing"
                     target="_blank">
