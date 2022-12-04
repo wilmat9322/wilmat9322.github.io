@@ -75,8 +75,13 @@ const toggleHome = () => {
                     >About</NavLinks>
                 </NavItem>
                 <NavItem>
-                    <NavLinks to="/signin"  
+                    <NavLinks to="skills"  
                     >Skills</NavLinks>
+                </NavItem>
+                <NavItem>
+                    <NavLinks to="awards"
+                    smooth={true} duration={500} spy={true} exact='true' offset={-80}
+                    >Awards</NavLinks>
                 </NavItem>
                 <NavItem>
                     <NavLinks to="projects"
@@ -84,7 +89,9 @@ const toggleHome = () => {
                     >Projects</NavLinks>
                 </NavItem>
                 <NavItem>
-                    <NavLinks to="">Experiences</NavLinks>
+                    <NavLinks to="experiences"
+                    smooth={true} duration={500} spy={true} exact='true' offset={-80}
+                    >Experiences</NavLinks>
                 </NavItem>
             </NavMenu>
             <NavBtn>

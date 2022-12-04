@@ -75,8 +75,8 @@ export const Heading = styled(motion.h1)`
     font-size: 40px; 
     font-weight: 600; 
     line-height: 1; 
+    text-align: center;
     color: #fff; 
-    width: 100%; 
     
     @media screen and (max-width: 968px) {
         justify:center;

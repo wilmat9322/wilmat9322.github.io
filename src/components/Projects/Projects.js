@@ -43,16 +43,17 @@ import {
         <>
         <ProjectsSec id={id}>
           <Container>
-            <ProjectsRow reverse={reverse}>
-              <ProjectsColumn>
-                <TextWrapper>
-                <Heading
+          <Heading
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ duration: 1 }}
                 >
-                 {heading}
+                 {heading}&#128213;
                 </Heading>
+            <ProjectsRow reverse={reverse}>
+              <ProjectsColumn>
+                <TextWrapper>
+              
                   <SubHeading
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}

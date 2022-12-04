@@ -4,12 +4,15 @@ import { Container } from '../../globalStyles'
 import {
     AboutSec,
     AboutRow,
+    AboutRow2,
     AboutColumn,
     TextWrapper,
+    TextWrapper2,
     Heading,
     SubHeading,
     Text,
     ImgWrapper,
+    ImgWrapper2,
     Img
   } from './AboutElements';
 
@@ -20,7 +23,11 @@ import {
       subHeading, 
       text,
       reverse,
-      img
+      img,
+      heading2,
+      text2,
+      reverse2,
+      img2
     } = props;
     const fadeRight = {
       hidden: { opacity: 0, x: 100},
@@ -39,7 +46,7 @@ import {
               animate={{ opacity: 1 }}
               transition={{ duration: 1 }}
               >
-               {heading}
+               {heading}&#128187;
           
               </Heading>
                 <SubHeading
@@ -63,6 +70,37 @@ import {
               </ImgWrapper>
             </AboutColumn>
           </AboutRow>
+
+          <AboutRow2 reverse={reverse2}>
+            <AboutColumn>
+              <TextWrapper2>
+              <Heading
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 1 }}
+              >
+               {heading2}&#127891;
+              </Heading>
+                <SubHeading
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ duration: 2 }}
+                >
+                </SubHeading>
+                <Text
+                variants={fadeRight}
+                initial='hidden'
+                animate='visible'
+                transition={{ duration: 1 }}
+                >{text2}</Text>
+              </TextWrapper2>
+            </AboutColumn>
+            <AboutColumn>
+              <ImgWrapper2>
+                <Img src={img2} alt="William Matos" whileTap={{ scale: 0.9}} draggable="false"/>
+              </ImgWrapper2>
+            </AboutColumn>
+          </AboutRow2>
         </Container>
       </AboutSec>
       </>

@@ -71,7 +71,7 @@ export const TextWrapper = styled.div`
 export const Heading = styled(motion.h1)` 
     font-size: 40px; 
     font-weight: 600; 
-    line-height: 1; 
+    line-height: 0; 
     color: #fff; 
     width: 100%; 
     
@@ -93,7 +93,7 @@ export const Heading = styled(motion.h1)`
         font-size: 40px;
         justify:center;
         text-align: center;
-        margin-top: 10px;
+        margin-top: 20px;
         width: 100%;
     }
 `;

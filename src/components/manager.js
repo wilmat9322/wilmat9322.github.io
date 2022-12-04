@@ -6,4 +6,5 @@ export {default as Skills} from './Skills/Skills';
 export {default as About} from './About/About';
 export {default as Awards} from './Awards/Awards';
 export {default as Projects} from './Projects/Projects';
+export {default as Experiences} from './Experiences/Experiences';
 export {default as Footer} from './Footer/Footer';

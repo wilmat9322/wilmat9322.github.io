@@ -39,7 +39,7 @@ import {
                 animate={{ opacity: 1 }}
                 transition={{ duration: 1 }}
                 >
-                 {heading}
+                 {heading}&#127942;
                 </Heading>
                   <SubHeading
                   initial={{ opacity: 0 }}

@@ -26,7 +26,7 @@ const Contact = () => {
         <Container>
             <ContactContainer>
             <Heading>
-                    Contact Me
+                    Contact Me &#128231;
                         </Heading>
                         <SubHeading>
                         Fill out the following form

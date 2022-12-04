@@ -4,7 +4,6 @@ import { MdWork } from "react-icons/md";
 import { VscGithub } from "react-icons/vsc";
 import { IconContext } from 'react-icons/lib';
 import Typewriter from 'typewriter-effect';
-import TypeWriterEffect from 'react-typewriter-effect';
 
 import {
   HeroSec,
@@ -49,7 +48,7 @@ const Hero = (props) => {
               animate={{ opacity: 1 }}
               transition={{ duration: 2 }}
             >
-             {heading}
+             {heading}&#128512;&#9996;
             </Heading>
               <SubHeading
                 initial={{ opacity: 0 }}
@@ -64,7 +63,7 @@ const Hero = (props) => {
                 transition={{ duration: 3 }}
               >{text}<Span></Span><Typewriter
               options={{
-              strings: ['Graduate Student', 'Cybersecurity Student', 'Computer Science Graduate', 'Web Developer'],
+              strings: ['Graduate Student', 'Cybersecurity Student', 'Computer Science Graduate', 'Web Developer', 'CyberLEADERs SFS Recipient'],
               autoStart: true,
               loop: true,
               delay: 100,
