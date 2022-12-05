@@ -65,7 +65,7 @@ export const Heading = styled(motion.h1)`
 `;
 
 export const ImgWrapper = styled.div` 
-    padding-top: 50px;
+    padding-top: 10px;
     padding-right: 20px;
     max-width: 500px;
     max-height: 100%; 
@@ -78,6 +78,22 @@ export const ImgWrapper = styled.div`
     max-width: 500px;
     }
 `;
+
+export const ImgWrapper2 = styled.div` 
+    padding-top: 10px;
+    padding-right: 20px;
+    max-width: 500px;
+    max-height: 100%; 
+    height: 100%;
+    bottom: 0;
+    display: flex;
+    justify-content: flex-start;
+
+    @media screen and (max-width: 968px) {
+    max-width: 500px;
+    }
+`;
+
 
 export const TimeImg = styled.img`
 padding-right: 0;
@@ -163,15 +179,13 @@ export const TimeLineContent2 = styled.div`
     position: relative;
     width: 400px;
     max-width: 70%;
-    text-align: right;
+    text-align: left;
 `
 
 export const Tag = styled.span` 
 color: #fff;
 font-size: 14px;
 font-weight: 400;
-
- 
 `
 
 export const Time = styled.time` 
@@ -183,12 +197,21 @@ margin-bottom: 5px;
 
 export const Text = styled.p` 
 color: #fff;
-font-size: 14px;
-font-weight: 400;
+font-size: 16px;
+font-weight: bold;
+text-align: left;
+`
+
+export const Text2 = styled.p` 
+color: #fff;
+font-size: 16px;
+font-weight: bold;
+text-align: left;
 `
 
 export const TimeLink = styled.a` 
 color: #fff;
+font-weight: 400;
 `
 
 export const Circle = styled.span` 

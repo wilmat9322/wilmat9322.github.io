@@ -4,7 +4,7 @@ import {motion} from 'framer-motion';
 
 export const FooterSec = styled.footer`
     background-color: #000;
-    padding-top: 50px;
+    padding-top: 70px;
     bottom: 0;
 `
 

@@ -74,9 +74,9 @@ export const TextWrapper = styled.div`
 export const Heading = styled(motion.h1)` 
     font-size: 40px; 
     font-weight: 600; 
-    line-height: 1; 
     text-align: center;
     color: #fff; 
+    margin-bottom: 20px;
     
     @media screen and (max-width: 968px) {
         justify:center;

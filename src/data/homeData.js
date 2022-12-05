@@ -38,16 +38,41 @@ export const sectionProjects = {
 	id: 'projects',
     heading: 'My projects',
 	subHeading: 'Landing Page - AppLivio',
-	text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium optio, eaque rerum! Provident similique accusantium nemo autem. Veritatis obcaecati tenetur iure eius earum ut molestias architecto voluptate aliquam nihil, eveniet aliquid culpa officia aut! Impedit sit sunt quaerat, odit, tenetur error, harum nesciunt ipsum",
+	text: "Using different technologies, a fully resposive landing page was develop for the company AppLivio to promote their virtual assistant and appointment manager called Sofia. This internship experience helped me sharpen my front-end developement skills, and gave me the experience to work with AWS Amplify.",
     reverse: true,
     img: require('../images/project1.png'),
 };
 
 export const sectionExperiences = {
 	id: 'experiences',
-    heading: 'My projects',
-	subHeading: 'Landing Page - AppLivio',
-	text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium optio, eaque rerum! Provident similique accusantium nemo autem. Veritatis obcaecati tenetur iure eius earum ut molestias architecto voluptate aliquam nihil, eveniet aliquid culpa officia aut! Impedit sit sunt quaerat, odit, tenetur error, harum nesciunt ipsum",
-    reverse: true,
-    img: require('../images/project1.png'),
+    date: 'June 2022 – July 2022 ',
+    place: 'Inter American University of Puerto Rico-Barranquitas',
+    position:'Position: IT Support',
+    description: 'I worked with IT Systems (Windows Computers) on college campus while giving IT Support. I troubleshooted network problems (DNS and IP Addresses) and, installed, maintained, and upgraded computer hardware and software.',
+    img: require('../images/inter.png'),
+
+    date2: 'August 2021 – July 2022',
+    place2: 'Upward Bound Program',
+    position2:'Position: Computer Teacher Assistant',
+    description2: 'Worked as a computer teacher assitant to teach high school students how to use common computer programs and helped them develop the necessary skills to enter college.',
+    img2: require('../images/trio.png'),
+
+    date3: 'August 2021 - December 2021',
+    place3: 'Internship with DoCare LLC',
+    position3:'Position: Front-End Web Developer (Remote)',
+    description3: 'Used the System Development Cycle to create a landing page for the startup company AppLivio. The landing page was created using ReactJS, NodeJS, Styled Components. It is fully responsive, and it was deployed using AWS Amplify. (www.applivio.com)',
+    img3: require('../images/applivio-logo.png'),
+
+    date4: 'June 2021 - August 2021',
+    place4: 'Research Experiences for Undergraduate (REU) Fellow',
+    position4:'Position: Student Researcher',
+    mentor:'Mentor: Hongyi Michael Wu, PhD',
+    description4: 'Understanding how adversarial examples “attacks” worked and finding a way to defend against them. Finding ways to improve the robustness of machine learning algorithms using adversarial training. Techniques: Using Pytorch and Torchattacks to import adversarial examples and defend against them using adversarial training “defense mechanism”.',
+    img4: require('../images/nsf.png'),
+
+    date5: 'February 2019 - November 2020',
+    place5: 'Econo Supermarket Barranquitas',
+    position5:'Position: Grocery Packer and Store Maintance',
+    img5: require('../images/econo.png'),
+
 };

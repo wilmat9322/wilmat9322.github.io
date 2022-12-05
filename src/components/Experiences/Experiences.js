@@ -11,24 +11,49 @@ import {
     Tag,
     Time, 
     Text,
+    Text2,
     TimeLink,
     Circle,
     Circle2,
     TimeLineContainer,
     TimeImg,
-    ImgWrapper
+    ImgWrapper,
+    ImgWrapper2
   } from './ExperiencesElements';
 
   const Experiences = (props) => {
     const {
       id,
-      heading,
-      subHeading, 
-      text,
-      reverse,
-      button1,
-      button2,
-      img
+      img,
+      date,
+      place,
+      position,
+      description,
+
+      img2,
+      date2,
+      place2,
+      position2,
+      description2,
+
+      img3,
+      date3,
+      place3,
+      position3,
+      description3,
+
+      img4,
+      date4,
+      place4,
+      position4,
+      mentor,
+      description4,
+
+      img5,
+      date5,
+      place5,
+      position5,
+
       } = props;
  
 return (
@@ -40,55 +65,52 @@ return (
 
             <TimeLineItem>
                 <ImgWrapper>
-                <TimeImg src='https://scontent-iad3-1.xx.fbcdn.net/v/t1.18169-1/12924332_1195196020492911_3494302905941983372_n.png?stp=dst-png_p148x148&_nc_cat=111&ccb=1-7&_nc_sid=1eb0c7&_nc_ohc=u-d63XYye8cAX-qNgRn&_nc_ht=scontent-iad3-1.xx&oh=00_AfDg0BVfmG047LbPMhkzc9HILH4il3FfCyvPrH6afBmWQQ&oe=63B34C7B'></TimeImg>
+                <TimeImg src={img}></TimeImg>
                 </ImgWrapper>
                 <TimeLineContent>
                     
-                    <Tag>June 2022 – July 2022</Tag>
-                    <Time>Inter American University of Puerto Rico-Barranquitas</Time>
-                    <Text>I worked with IT Systems (Windows Computers) on college campus while
-                    giving IT Support. I troubleshooted network problems (DNS and IP Addresses) and,
-                    installed, maintained, and upgraded computer hardware and software.</Text>
+                    <Tag>{date}</Tag>
+                    <Time>{place}</Time>
+                    <Text>{position}</Text>
                   
-                        <TimeLink>
-
-                        </TimeLink>
-                        <Circle/>
+                    <TimeLink>
+                    {description}
+                    </TimeLink>
+                    <Circle/>
                     
                 </TimeLineContent>
             </TimeLineItem>
 
              <TimeLineItem2>
-                
                 <TimeLineContent2>
-                <Tag>June 2022 – July 2022</Tag>
-                    <Time>Inter American University of Puerto Rico-Barranquitas</Time>
-                    <Text>I worked with IT Systems (Windows Computers) on college campus while
-                    giving IT Support. I troubleshooted network problems (DNS and IP Addresses) and,
-                    installed, maintained, and upgraded computer hardware and software.</Text>
-                   
+                <Tag>{date2}</Tag>
+                    <Time>{place2}</Time>
+                    <Text2>{position2}</Text2>
                         <TimeLink>
-                      
+                        {description2}
                         </TimeLink>
         
                     <Circle2/>
                 </TimeLineContent2>
-                <ImgWrapper>
-                <TimeImg src='https://scontent-iad3-1.xx.fbcdn.net/v/t1.18169-1/12924332_1195196020492911_3494302905941983372_n.png?stp=dst-png_p148x148&_nc_cat=111&ccb=1-7&_nc_sid=1eb0c7&_nc_ohc=u-d63XYye8cAX-qNgRn&_nc_ht=scontent-iad3-1.xx&oh=00_AfDg0BVfmG047LbPMhkzc9HILH4il3FfCyvPrH6afBmWQQ&oe=63B34C7B'></TimeImg>
-                </ImgWrapper>
+                <ImgWrapper2>
+                <TimeImg src={img2}></TimeImg>
+                </ImgWrapper2>
             </TimeLineItem2>
 
 
             <TimeLineItem>
+            <ImgWrapper>
+                <TimeImg src={img3}></TimeImg>
+                </ImgWrapper>
                 <TimeLineContent>
-                    <Tag>Experience #1</Tag>
-                    <Time>Experience #1</Time>
-                    <Text>Experience #1</Text>
+                    <Tag>{date3}</Tag>
+                    <Time>{place3}</Time>
+                    <Text>{position3}</Text>
                    
                         <TimeLink>
-                        Experience #1
+                        {description3}
                         </TimeLink>
-        
+
                     <Circle/>
                 </TimeLineContent>
             </TimeLineItem>
@@ -96,26 +118,31 @@ return (
 
             <TimeLineItem2>
                 <TimeLineContent2>
-                    <Tag></Tag>
-                    <Time>Experience #1</Time>
-                    <Text>Experience #1</Text>
-                   
+                    <Tag>{date4}</Tag>
+                    <Time>{place4}</Time>
+                    <Text2>{position4}</Text2>
+                    <Text2>{mentor}</Text2>
+        
                         <TimeLink>
-                        Experience #1
+                        {description4}
                         </TimeLink>
         
                     <Circle2/>
                 </TimeLineContent2>
+                <ImgWrapper2>
+                <TimeImg src={img4}></TimeImg>
+                </ImgWrapper2>
             </TimeLineItem2>
 
             <TimeLineItem>
+            <ImgWrapper>
+                <TimeImg src={img5}></TimeImg>
+                </ImgWrapper>
                 <TimeLineContent>
-                    <Tag>Experience #1</Tag>
-                    <Time>Experience #1</Time>
-                    <Text>Experience #1</Text>
-                   
+                    <Tag>{date5}</Tag>
+                    <Time>{place5}</Time>
+                    <Text>{position5}</Text>
                         <TimeLink>
-                        Experience #1
                         </TimeLink>
         
                     <Circle/>
