@@ -1,4 +1,6 @@
-import React from 'react'
+import React, { useEffect } from 'react'
+import AOS from "aos"; 
+import "aos/dist/aos.css"; 
 import { Container } from '../../globalStyles'
 
 import {
@@ -24,6 +26,7 @@ import {
   const Experiences = (props) => {
     const {
       id,
+      heading,
       img,
       date,
       place,
@@ -60,20 +63,50 @@ return (
     <>
     <ExperienceSec id={id}>
         <Container>
-            <Heading>Experiences &#128188;</Heading>
+            <Heading
+            data-aos="fade-right"
+            data-aos-once="true"
+            data-aos-offset="100"
+            data-aos-duration="900">
+            {heading}</Heading>
             <TimeLineContainer>
 
-            <TimeLineItem>
-                <ImgWrapper>
+            <TimeLineItem >
+                <ImgWrapper
+                data-aos="fade-right"
+                data-aos-once="true"
+                data-aos-offset="300"
+                data-aos-duration="900"
+                data-aos-easing="ease-in-sine">
                 <TimeImg src={img}></TimeImg>
                 </ImgWrapper>
                 <TimeLineContent>
                     
-                    <Tag>{date}</Tag>
-                    <Time>{place}</Time>
-                    <Text>{position}</Text>
+                    <Tag
+                    data-aos="fade-right"
+                    data-aos-once="true"
+                    data-aos-offset="300"
+                    data-aos-duration="900"
+                    data-aos-easing="ease-in-sine">{date}</Tag>
+                    <Time
+                    data-aos="fade-right"
+                    data-aos-once="true"
+                    data-aos-offset="300"
+                    data-aos-duration="900"
+                    data-aos-easing="ease-in-sine">{place}</Time>
+                    <Text
+                    data-aos="fade-right"
+                    data-aos-once="true"
+                    data-aos-offset="300"
+                    data-aos-duration="900"
+                    data-aos-easing="ease-in-sine">{position}</Text>
                   
-                    <TimeLink>
+                    <TimeLink
+                    data-aos="fade-right"
+                    data-aos-once="true"
+                    data-aos-offset="300"
+                    data-aos-duration="900"
+                    data-aos-easing="ease-in-sine">
                     {description}
                     </TimeLink>
                     <Circle/>
@@ -81,33 +114,94 @@ return (
                 </TimeLineContent>
             </TimeLineItem>
 
-             <TimeLineItem2>
-                <TimeLineContent2>
-                <Tag>{date2}</Tag>
-                    <Time>{place2}</Time>
-                    <Text2>{position2}</Text2>
-                        <TimeLink>
+            <TimeLineItem2>
+            <TimeLineContent2>
+                <Tag 
+                data-aos="fade-left"
+                data-aos-once="true"
+                data-aos-offset="300"
+                data-aos-duration="900"
+                data-aos-easing="ease-in-sine">
+                {date2}</Tag>
+                    <Time 
+                    data-aos="fade-left"
+                    data-aos-once="true"
+                    data-aos-offset="300"
+                    data-aos-duration="900"
+                    data-aos-easing="ease-in-sine">
+                    {place2}</Time>
+                    <Text2
+                    data-aos="fade-left"
+                    data-aos-once="true"
+                    data-aos-offset="300"
+                    data-aos-duration="900"
+                    data-aos-easing="ease-in-sine">
+                    {position2}</Text2>
+                        <TimeLink
+                        data-aos="fade-left"
+                        data-aos-once="true"
+                        data-aos-offset="300"
+                        data-aos-duration="900"
+                        data-aos-easing="ease-in-sine">
                         {description2}
                         </TimeLink>
         
                     <Circle2/>
+                    
                 </TimeLineContent2>
                 <ImgWrapper2>
-                <TimeImg src={img2}></TimeImg>
+                <TimeImg 
+                data-aos="fade-left"
+                data-aos-once="true"
+                data-aos-offset="300"
+                data-aos-duration="900"
+                data-aos-easing="ease-in-sine"
+                src={img2}></TimeImg>
                 </ImgWrapper2>
-            </TimeLineItem2>
+                </TimeLineItem2>
+          
+            
 
 
             <TimeLineItem>
             <ImgWrapper>
-                <TimeImg src={img3}></TimeImg>
+                <TimeImg 
+                data-aos="fade-right"
+                data-aos-once="true"
+                data-aos-offset="300"
+                data-aos-duration="900"
+                data-aos-easing="ease-in-sine"
+                src={img3}></TimeImg>
                 </ImgWrapper>
                 <TimeLineContent>
-                    <Tag>{date3}</Tag>
-                    <Time>{place3}</Time>
-                    <Text>{position3}</Text>
+                    <Tag
+                    data-aos="fade-right"
+                    data-aos-once="true"
+                    data-aos-offset="300"
+                    data-aos-duration="900"
+                    data-aos-easing="ease-in-sine">
+                        {date3}</Tag>
+                    <Time
+                    data-aos="fade-right"
+                    data-aos-once="true"
+                    data-aos-offset="300"
+                    data-aos-duration="900"
+                    data-aos-easing="ease-in-sine">
+                        {place3}</Time>
+                    <Text
+                    data-aos="fade-right"
+                    data-aos-once="true"
+                    data-aos-offset="300"
+                    data-aos-duration="900"
+                    data-aos-easing="ease-in-sine">
+                        {position3}</Text>
                    
-                        <TimeLink>
+                        <TimeLink
+                        data-aos="fade-right"
+                        data-aos-once="true"
+                        data-aos-offset="300"
+                        data-aos-duration="900"
+                        data-aos-easing="ease-in-sine">
                         {description3}
                         </TimeLink>
 
@@ -118,30 +212,88 @@ return (
 
             <TimeLineItem2>
                 <TimeLineContent2>
-                    <Tag>{date4}</Tag>
-                    <Time>{place4}</Time>
-                    <Text2>{position4}</Text2>
-                    <Text2>{mentor}</Text2>
+                    <Tag
+                    data-aos="fade-left"
+                    data-aos-once="true"
+                    data-aos-offset="300"
+                    data-aos-duration="900"
+                    data-aos-easing="ease-in-sine">
+                        {date4}</Tag>
+                    <Time
+                    data-aos="fade-left"
+                    data-aos-once="true"
+                    data-aos-offset="300"
+                    data-aos-duration="900"
+                    data-aos-easing="ease-in-sine">
+                        {place4}</Time>
+                    <Text2
+                    data-aos="fade-left"
+                    data-aos-once="true"
+                    data-aos-offset="300"
+                    data-aos-duration="900"
+                    data-aos-easing="ease-in-sine">
+                        {position4}</Text2>
+                    <Text2
+                    data-aos="fade-left"
+                    data-aos-once="true"
+                    data-aos-offset="300"
+                    data-aos-duration="900"
+                    data-aos-easing="ease-in-sine">
+                    {mentor}</Text2>
         
-                        <TimeLink>
+                        <TimeLink
+                        data-aos="fade-left"
+                        data-aos-once="true"
+                        data-aos-offset="300"
+                        data-aos-duration="900"
+                        data-aos-easing="ease-in-sine">
                         {description4}
                         </TimeLink>
         
                     <Circle2/>
                 </TimeLineContent2>
                 <ImgWrapper2>
-                <TimeImg src={img4}></TimeImg>
+                <TimeImg 
+                data-aos="fade-left"
+                data-aos-once="true"
+                data-aos-offset="300"
+                data-aos-duration="900"
+                data-aos-easing="ease-in-sine"
+                src={img4}></TimeImg>
                 </ImgWrapper2>
             </TimeLineItem2>
 
             <TimeLineItem>
             <ImgWrapper>
-                <TimeImg src={img5}></TimeImg>
+                <TimeImg data-aos="fade-right"
+                  data-aos-once="true"
+                  data-aos-offset="300"
+                  data-aos-duration="900"
+                  data-aos-easing="ease-in-sine"
+                  src={img5}></TimeImg>
                 </ImgWrapper>
                 <TimeLineContent>
-                    <Tag>{date5}</Tag>
-                    <Time>{place5}</Time>
-                    <Text>{position5}</Text>
+                    <Tag
+                    data-aos="fade-right"
+                    data-aos-once="true"
+                    data-aos-offset="300"
+                    data-aos-duration="900"
+                    data-aos-easing="ease-in-sine">
+                    {date5}</Tag>
+                    <Time
+                    data-aos="fade-right"
+                    data-aos-once="true"
+                    data-aos-offset="300"
+                    data-aos-duration="900"
+                    data-aos-easing="ease-in-sine">
+                    {place5}</Time>
+                    <Text
+                    data-aos="fade-right"
+                    data-aos-once="true"
+                    data-aos-offset="300"
+                    data-aos-duration="900"
+                    data-aos-easing="ease-in-sine">
+                    {position5}</Text>
                         <TimeLink>
                         </TimeLink>
         

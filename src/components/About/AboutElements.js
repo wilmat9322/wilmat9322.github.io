@@ -39,14 +39,6 @@ export const AboutRow = styled.div`
     flex-direction: ${({ reverse }) => (reverse ? 'row-reverse' : 'row')};
 `;
 
-export const AboutRow2 = styled.div` 
-    display: flex;
-    margin: 50px 15px 0px 15px; 
-    flex-wrap: wrap; 
-    align-items: center; 
-    flex-direction: ${({ reverse }) => (reverse ? 'row-reverse' : 'row')};
-`;
-
 export const AboutColumn = styled.div`  
     bottom: 0;
     padding-top: 0px;
@@ -79,23 +71,6 @@ export const TextWrapper = styled.div`
 
 `;
 
-export const TextWrapper2 = styled.div` 
-    max-width: 968px; 
-    width: 100%;
-    padding-top: 0px;
-    padding-bottom: 0px;
-    padding-right: 40px;
-    @media screen and (max-width: 968px) {
-    padding-bottom: 40px;  
-    padding-left: 0px; 
-    padding-right: 0px;
-    }
-    @media screen and (max-width: 600px) {
-    padding-left: 0px;
-    padding-right: 0px;
-    }
-
-`;
 
 export const Heading = styled(motion.h1)` 
     font-size: 40px; 
@@ -119,7 +94,7 @@ export const Heading = styled(motion.h1)`
     }
     
     @media screen and (max-width: 600px) {
-        font-size: 40px;
+        font-size: 35px;
         justify:center;
         text-align: center;
         margin-top: 20px;
@@ -146,6 +121,7 @@ export const SubHeading = styled(motion.p)`
     }
     
     @media screen and (max-width: 600px) {
+        margin-top: 20px;
         font-size: 20px;
         margin-left: 15px;
         margin-right: 15px;
@@ -173,7 +149,6 @@ export const Text = styled(motion.p)`
     }
     
     @media screen and (max-width: 600px) {
-        margin-top: 0px;
         margin-left: 15px;
         margin-right: 15px;
         font-size: 16px;
@@ -196,22 +171,6 @@ export const ImgWrapper = styled.div`
     max-width: 500px;
     }
 `;
-
-export const ImgWrapper2 = styled.div` 
-    max-width: 900px;
-    max-height: 100%; 
-    height: 100%;
-    bottom: 0;
-    display: flex;
-    justify-content: flex-start;
-    padding-left: 25px;
-
-    @media screen and (max-width: 968px) {
-    max-width: 500px;
-    padding-left: 0px;
-    }
-`;
-
 
 export const Img = styled(motion.img)`
     padding-right: 0;

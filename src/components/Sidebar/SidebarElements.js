@@ -68,11 +68,15 @@ export const SidebarLink = styled(LinkS)`
         color: #F05454;
         transition: 0.2s ease-in-out;
     }
+    
 ` 
 
 export const SideBtnWrap = styled.div`
     display: flex;
     justify-content: center;
+    @media screen and (max-width: 1200px) {
+        margin-top: 20px;
+    }
 `
 
 export const SidebarRoute = styled(LinkR)`

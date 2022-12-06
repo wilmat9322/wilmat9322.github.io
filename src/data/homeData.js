@@ -17,12 +17,17 @@ export const sectionAbout = {
     //I have a Bachelor's Degree in Computer Science. I am also a recipient of the CyberCorps Scholarship for Service (SFS). I recently moved to Norfolk, Virginia to pursue a Master's in Cybersecurity
     reverse: true,
     img: require('../images/about.png'),
+};
 
-    heading2: 'Education',
-	subHeading2: '',
-	text2: "I completed my undergraduate studies at the Interamerican University of Puerto Rico-Barranquitas. In May, 2022 I officially obtained my Bachelor's degree in Computer Science with a Minor Concentration in Videogame Design and Development. In 2021, I participated in a Summer Research for Undergraduates which gave me the opportunity to do research on an Emerging Cybersecurity Topic. After that I was told that I could apply to the CyberCorps Scholarship for Service. When I got accepted I moved to Norfolk, VA to pursue a Master's in Cybersecurity in Old Dominion University. With this opportunity I aim to work for the goverment, get as much certifications I can, and prepare myself to be the professional I aspire to be.",
-    reverse: true,
-    img2: require('../images/education.png'),
+export const sectionEducation = {
+	id: 'education',
+    heading: 'Education🎓',
+	subHeading: '',
+	text: "I completed my undergraduate studies at the Interamerican University of Puerto Rico-Barranquitas. In May, 2022 I officially obtained my Bachelor's degree in Computer Science with a Minor Concentration in Videogame Design and Development. In 2021, I participated in a Summer Research for Undergraduates which gave me the opportunity to do research on an Emerging Cybersecurity Topic. After that I was told that I could apply to the CyberCorps Scholarship for Service. When I got accepted I moved to Norfolk, VA to pursue a Master's in Cybersecurity in Old Dominion University. With this opportunity I aim to work for the goverment, get as much certifications I can, and prepare myself to be the professional I aspire to be.",
+    //I have a Bachelor's Degree in Computer Science. I am also a recipient of the CyberCorps Scholarship for Service (SFS). I recently moved to Norfolk, Virginia to pursue a Master's in Cybersecurity
+    reverse: false,
+    img: require('../images/education.png'),
+
 };
 
 export const sectionAwards = {
@@ -32,6 +37,21 @@ export const sectionAwards = {
 	text: "The CyberLEADERs Program is a Scholarship for Service award created in 2021 through funding from the National Science Foundation's CyberCorps Scholarship for Service initiative. The scholarship program provides two to three years of support to selected students. This includes a full in-state tuition scholarship, an annual stipend, and a professional development allowance. In exchange, each student must work for the federal government in select cybersecurity positions for the same number of years. My experience so far has been great. I have learned a lot and made many connections, and the program has prepared me professionally. I have met my peers, and they have strong ambitions and goals. I look forward to working with every one of them in the future.",
     reverse: false,
     img: require('../images/award.png'),
+};
+
+export const sectionSkills = {
+	id: 'skills',
+    heading: 'Skills 🛠️',
+	subHeading: 'Bellow you will see my technical and soft skills. Over time I will add more, but for now those are what I got.',
+    img1: require('../images/binary-code.png'),
+    img2: require('../images/hacker.png'),
+    img3: require('../images/solution.png'),
+    channelTitle:'Programming',
+    channelDesc:'C++, Python, SQL, HTML5, CSS, JavaScript, ReactJS, Microsoft Visual Basic',
+    channelTitle2:'Cybersecurity',
+    channelDesc2:'NMAP, Nessus, Wireshark, Burpsuit, Snort, Bash, Powershell Scripting, Autopsy, ProDiscover, FTK Imager, and Recuva',
+    channelTitle3:'Soft Skills',
+    channelDesc3:'Good writing, communication, teamwork, critical thinking, and time management skills',
 };
 
 export const sectionProjects = {
@@ -45,6 +65,7 @@ export const sectionProjects = {
 
 export const sectionExperiences = {
 	id: 'experiences',
+    heading:'Experiences',
     date: 'June 2022 – July 2022 ',
     place: 'Inter American University of Puerto Rico-Barranquitas',
     position:'Position: IT Support',

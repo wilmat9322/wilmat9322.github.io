@@ -1,4 +1,6 @@
-import React from 'react'
+import React, { useEffect } from 'react'
+import AOS from "aos"; 
+import "aos/dist/aos.css"; 
 import { Container } from '../../globalStyles'
 import {
     ContactSec,
@@ -25,14 +27,22 @@ const Contact = () => {
     <ContactSec>
         <Container>
             <ContactContainer>
-            <Heading>
+            <Heading
+            data-aos="fade-in"
+            data-aos-once="true"
+            data-aos-offset="100"
+            data-aos-duration="900">
                     Contact Me &#128231;
                         </Heading>
                         <SubHeading>
                         Fill out the following form
                         </SubHeading>
                     <ContactRow>
-                        <ContactColumn>
+                        <ContactColumn 
+                        data-aos="fade-in"
+                        data-aos-once="true"
+                        data-aos-offset="100"
+                        data-aos-duration="900">
                         <TextWrapper>
                         
                     </TextWrapper>
@@ -43,7 +53,11 @@ const Contact = () => {
                             <LabelPhone>Phone Number</LabelPhone>
                             <InputBox type="tel" placeholder="Phone Number" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required/>
                         </ContactColumn>
-                        <ContactColumn>
+                        <ContactColumn
+                        data-aos="fade-in"
+                        data-aos-once="true"
+                        data-aos-offset="100"
+                        data-aos-duration="900">
                             <MessageContainer>
                             <LabelMessage>Message</LabelMessage>
                             <InputMessage type="message" placeholder="Message *" rows="4" cols="50" maxlength={50}/>

@@ -1,18 +1,17 @@
-import React from 'react'
+import React, { useEffect } from 'react'
+import AOS from "aos"; 
+import "aos/dist/aos.css"; 
 import { Container } from '../../globalStyles'
 
 import {
     AboutSec,
     AboutRow,
-    AboutRow2,
     AboutColumn,
     TextWrapper,
-    TextWrapper2,
     Heading,
     SubHeading,
     Text,
     ImgWrapper,
-    ImgWrapper2,
     Img
   } from './AboutElements';
 
@@ -24,15 +23,7 @@ import {
       text,
       reverse,
       img,
-      heading2,
-      text2,
-      reverse2,
-      img2
     } = props;
-    const fadeRight = {
-      hidden: { opacity: 0, x: 100},
-      visible: {opacity: 1, x: 0}
-    };
 
     return (
       <>
@@ -42,65 +33,42 @@ import {
             <AboutColumn>
               <TextWrapper>
               <Heading
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ duration: 1 }}
-              >
+              data-aos="fade-left"
+              data-aos-once="true"
+              data-aos-offset="100"
+              data-aos-duration="900">
                {heading}&#128187;
           
               </Heading>
                 <SubHeading
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{ duration: 2 }}
+                  data-aos="fade-left"
+                  data-aos-once="true"
+                  data-aos-offset="100"
+                  data-aos-duration="900"
                 >
                   {subHeading}
                 </SubHeading>
                 <Text
-                variants={fadeRight}
-                initial='hidden'
-                animate='visible'
-                transition={{ duration: 1 }}
+                data-aos="fade-left"
+                data-aos-once="true"
+                data-aos-offset="300"
+                data-aos-duration="900"
+                data-aos-easing="ease-in-sine"
                 >{text}</Text>
               </TextWrapper>
             </AboutColumn>
             <AboutColumn>
               <ImgWrapper>
-                <Img src={img} alt="William Matos" whileTap={{ scale: 0.9}} draggable="false"/>
+                <Img
+                  data-aos="fade-in"
+                  data-aos-once="true"
+                  data-aos-offset="100"
+                  data-aos-duration="900" 
+                src={img} alt="William Matos"  
+                draggable="false"/>
               </ImgWrapper>
             </AboutColumn>
           </AboutRow>
-
-          <AboutRow2 reverse={reverse2}>
-            <AboutColumn>
-              <TextWrapper2>
-              <Heading
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ duration: 1 }}
-              >
-               {heading2}&#127891;
-              </Heading>
-                <SubHeading
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{ duration: 2 }}
-                >
-                </SubHeading>
-                <Text
-                variants={fadeRight}
-                initial='hidden'
-                animate='visible'
-                transition={{ duration: 1 }}
-                >{text2}</Text>
-              </TextWrapper2>
-            </AboutColumn>
-            <AboutColumn>
-              <ImgWrapper2>
-                <Img src={img2} alt="William Matos" whileTap={{ scale: 0.9}} draggable="false"/>
-              </ImgWrapper2>
-            </AboutColumn>
-          </AboutRow2>
         </Container>
       </AboutSec>
       </>

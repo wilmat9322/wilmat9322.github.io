@@ -1,4 +1,6 @@
-import React from 'react'
+import React, { useEffect } from 'react'
+import AOS from "aos"; 
+import "aos/dist/aos.css"; 
 import { Container } from '../../globalStyles'
 import { IconContext } from 'react-icons/lib';
 import { AiFillPlayCircle } from "react-icons/ai";
@@ -34,31 +36,27 @@ import {
       reverse,
       img
     } = props;
-    const fadeRight = {
-      hidden: { opacity: 0, x: 100},
-      visible: {opacity: 1, x: 0}
-    };
 
     return (
         <>
         <ProjectsSec id={id}>
           <Container>
           <Heading
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{ duration: 1 }}
-                >
+             data-aos="fade-left"
+             data-aos-once="true"
+             data-aos-offset="100"
+             data-aos-duration="900">
                  {heading}&#128213;
                 </Heading>
             <ProjectsRow reverse={reverse}>
               <ProjectsColumn>
-                <TextWrapper>
+                <TextWrapper
+                data-aos="fade-left"
+                data-aos-once="true"
+                data-aos-offset="100"
+                data-aos-duration="900">
               
-                  <SubHeading
-                  initial={{ opacity: 0 }}
-                  animate={{ opacity: 1 }}
-                  transition={{ duration: 2 }}
-                  >
+                  <SubHeading>
                     {subHeading}
                   </SubHeading>
 
@@ -102,11 +100,12 @@ import {
                   </Tools>
 
                   <Text
-                  variants={fadeRight}
-                  initial='hidden'
-                  animate='visible'
-                  transition={{ duration: 1 }}
-                  >{text}</Text>
+                  data-aos="fade-left"
+                  data-aos-once="true"
+                  data-aos-offset="300"
+                  data-aos-duration="900"
+                  data-aos-easing="ease-in-sine">
+                  {text}</Text>
                 <ButtonContainer href="https://www.applivio.com" target="_blank">
                    <Button>Live Demo 
                    <IconContext.Provider
@@ -125,7 +124,13 @@ import {
               </ProjectsColumn>
               <ProjectsColumn>
                 <ImgWrapper>
-                  <Img src={img} alt="William Matos" draggable="false"/>
+                  <Img
+                  data-aos="fade-in"
+                  data-aos-once="true"
+                  data-aos-offset="100"
+                  data-aos-duration="900" 
+                  src={img} alt="William Matos" 
+                  draggable="false"/>
                 </ImgWrapper>
               </ProjectsColumn>
             </ProjectsRow>

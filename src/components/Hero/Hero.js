@@ -1,4 +1,6 @@
-import React from 'react'
+import React, { useEffect } from 'react'
+import AOS from "aos"; 
+import "aos/dist/aos.css"; 
 import { Container } from '../../globalStyles'
 import { MdWork } from "react-icons/md";
 import { VscGithub } from "react-icons/vsc";
@@ -21,6 +23,9 @@ import {
 } from './HeroElements';
 
 const Hero = (props) => {
+    useEffect(() => {
+      AOS.init({ duration: 2000 }); 
+    }, []);
   const {
 		id,
     heading,
@@ -31,10 +36,6 @@ const Hero = (props) => {
     button2,
     img
 	} = props;
-  const fadeLeft = {
-    hidden: { opacity: 0, x: -100},
-    visible: {opacity: 1, x: 0}
-  };
 
   return (
     <>
@@ -43,27 +44,29 @@ const Hero = (props) => {
         <HeroRow reverse={reverse}>
           <HeroColumn>
             <TextWrapper>
-            <Heading
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ duration: 2 }}
-            >
+            <Heading  
+              data-aos="fade-right"
+              data-aos-once="true"
+              data-aos-offset="100"
+              data-aos-duration="900">
              {heading}&#128512;&#9996;
             </Heading>
               <SubHeading
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{ duration: 2 }}
-              >
+                data-aos="fade-right"
+                data-aos-once="true"
+                data-aos-offset="100"
+                data-aos-duration="900">
                 {subHeading}
               </SubHeading>
               <Text
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{ duration: 3 }}
-              >{text}<Span></Span><Typewriter
+                data-aos="fade-right"
+                data-aos-once="true"
+                data-aos-offset="100"
+                data-aos-duration="900">
+              {text}<Span></Span>
+              <Typewriter
               options={{
-              strings: ['Graduate Student', 'Cybersecurity Student', 'Computer Science Graduate', 'Web Developer', 'CyberLEADERs SFS Recipient'],
+              strings: ['Welcome to my e-portfolio', 'Graduate Student', 'Cybersecurity Student', 'Computer Science Graduate', 'Web Developer', 'CyberLEADERs SFS Recipient'],
               autoStart: true,
               loop: true,
               delay: 100,
@@ -73,12 +76,8 @@ const Hero = (props) => {
                 <BtnLink
                     href="https://drive.google.com/file/d/12oFcGkvyTOmO4tnotnTi-GO6eMmAcWmw/view?usp=sharing"
                     target="_blank">
-                    <Button
-                      variants={fadeLeft}
-                      initial='hidden'
-                      animate='visible'
-                      transition={{ duration: 1 }}
-                    >{button1} 
+                    <Button>
+                    {button1} 
                     <IconContext.Provider
                     value={{
                       size: "20px",
@@ -94,12 +93,8 @@ const Hero = (props) => {
                     href="https://github.com/wilmat9322"
                     target="_blank"
                 >
-                    <Button
-                      variants={fadeLeft}
-                      initial='hidden'
-                      animate='visible'
-                      transition={{ duration: 1 }}
-                    >{button2} 
+                    <Button>
+                    {button2} 
                     <IconContext.Provider
                     value={{
                       size: "20px",
@@ -115,7 +110,13 @@ const Hero = (props) => {
           </HeroColumn>
           <HeroColumn>
             <ImgWrapper>
-              <Img src={img} alt="William Matos" whileTap={{ scale: 0.9}} draggable="false"/>
+              <Img 
+                data-aos="fade-in"
+                data-aos-once="true"
+                data-aos-offset="100"
+                data-aos-duration="900"
+              src={img} alt="William Matos" 
+              draggable="false"/>
             </ImgWrapper>
           </HeroColumn>
         </HeroRow>

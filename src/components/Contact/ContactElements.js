@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import {Link} from 'react-scroll'
 import {motion} from 'framer-motion';
 
 export const ContactSec = styled.div` 
@@ -110,7 +109,7 @@ export const Heading = styled(motion.h1)`
     }
     
     @media screen and (max-width: 600px) {
-        font-size: 40px;
+        font-size: 30px;
         justify:center;
         text-align: center;
         margin-top: 10px;

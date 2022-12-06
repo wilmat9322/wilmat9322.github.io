@@ -77,10 +77,10 @@ const {
                                 <FooterLinkTitle>Menu</FooterLinkTitle>
                                     <FooterLink to="home" smooth={true} duration={500} spy={true} exact='true' offset={-80}>Home</FooterLink>  
                                     <FooterLink to="about" smooth={true} duration={500} spy={true} exact='true' offset={-80}>About me</FooterLink>
-                                    <FooterLink to="/skills">Skills</FooterLink>
-                                    <FooterLink to="projects">Projects</FooterLink>
+                                    <FooterLink to="skills" smooth={true} duration={500} spy={true} exact='true' offset={-80}>Skills</FooterLink>
+                                    <FooterLink to="projects" smooth={true} duration={500} spy={true} exact='true' offset={-80}>Projects</FooterLink>
                                     <FooterLink to="awards" smooth={true} duration={500} spy={true} exact='true' offset={-80}>Awards</FooterLink>
-                                    <FooterLink to="/experience">Experience</FooterLink>                    
+                                    <FooterLink to="experiences" smooth={true} duration={500} spy={true} exact='true' offset={-80}>Experience</FooterLink>                    
                                 </FooterLinkItems>
                             </FooterLinksWrapper>
                         </FooterLinksContainer>
