@@ -1,7 +1,5 @@
 import React from 'react'
 import { Container } from '../../globalStyles'
-import { BiCodeBlock } from "react-icons/bi";
-import { IconContext } from 'react-icons/lib';
 
 import {
   SkillSec,

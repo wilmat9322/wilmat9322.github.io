@@ -5,6 +5,7 @@ import {Link} from 'react-scroll'
 
 const GlobalStyle = createGlobalStyle`
 /* Propiedades para toda la página, asigna fuente de letra y ajusta espacios demás */
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -17,6 +18,9 @@ body {
     width: 100%;
     margin: 0;
     padding: 0;
+}
+:root{
+--swiper-theme-color: #DA2D2D;
 }
 `;
 
@@ -32,7 +36,7 @@ color: #0000;
 export const Container = styled.div`
 z-index: 1;
 width: 100%;
-max-width: 1300px;
+max-width: 1400px;
 margin-right: auto; 
 margin-left: auto;
 padding-right: 120px;
@@ -43,7 +47,6 @@ background: linear-gradient(-50.49deg, rgba(255, 255, 255, 0.03) 81.89%, rgba(19
 backdrop-filter: blur(30px);
 color: #0000;
 border-radius: 25px;
-
     @media screen and (max-width: 1200px) {
     padding-right: 30px;
     padding-left: 30px;
