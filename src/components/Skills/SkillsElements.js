@@ -154,7 +154,7 @@ font-weight: bolder;
 export const SkillCardDesc = styled.p`
   margin: 0px 0 0px;
   width: 100%;
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 400;
   list-style: none;
   display: flex;

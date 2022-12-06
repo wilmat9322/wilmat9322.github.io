@@ -42,6 +42,7 @@ export const ProjectsRow = styled.div`
 export const ProjectsColumn = styled.div`  
     bottom: 0;
     padding-top: 0px;
+  
     flex: 1;
     max-width: 50%; 
     flex-basis: 50%; 
@@ -272,7 +273,7 @@ export const Img = styled(motion.img)`
     padding-right: 0;
     border: 0;
     max-width: 100%;
-    max-height: 500px;
+    max-height: 400px;
     display: inline-block; 
     object-position: bottom;
     vertical-align: middle; 

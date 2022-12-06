@@ -61,6 +61,18 @@ export const sectionProjects = {
 	text: "Using different technologies, a fully resposive landing page was develop for the company AppLivio to promote their virtual assistant and appointment manager called Sofia. This internship experience helped me sharpen my front-end developement skills, and gave me the experience to work with AWS Amplify.",
     reverse: true,
     img: require('../images/project1.png'),
+
+    subHeading2: 'A Sensible Approach for Implementing the NIST Cybersecurity Framework',
+	text2: "The National Institute of Standards and Technology's Cybersecurity Framework (NIST CSF) was created in 2014 to help organizations that want to improve their cybersecurity defenses. While most organizations recognize how the NIST CSF Framework works, collaborative effort to improve cybersecurity in businesses of all sizes, adapting and implementing the Framework can be easier said than done.",
+    img2:require('../images/NIST_logo.png'),
+
+    subHeading3: 'ATM Malware Analysis in Digital Forensics',
+	text3: "ATMs or automated teller machines are computers programmed to manage bank funds. These computers are a big target for criminals since they hold a lot of cash and are vulnerable to physical, software, and remote attacks. Knowing what kind of threats these machines are vulnerable to is vital since they can be part of skimming and laundering money crimes. Therefore, Digital forensics investigators should be familiar with these kinds of frauds on ATMs.",
+    img3:require('../images/hacking-ATM.png'),
+
+    subHeading4: 'Using Torchattacks to Improve the Robustness of Models with Adversarial Training ',
+	text4: "Adversarial training has proven to be one of the most successful ways to defend models against adversarial examples. This process consists of training a model with an adversarial example to improve the robustness of the model. In this experiment, Torchattacks, a Pytorch library made for importing adversarial examples more easily, was used to determine which attack was the strongest.",
+    img4:require('../images/cifar10.png'),
 };
 
 export const sectionExperiences = {
