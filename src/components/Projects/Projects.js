@@ -66,12 +66,12 @@ import {
         }}
         pagination={{
           clickable: true,
+          opacity: false,
         }}
         
         modules={[Autoplay, Pagination, Navigation]}> 
          <SwiperSlide>
           <Container>   
-          
           <Heading
              data-aos="fade-left"
              data-aos-once="true"

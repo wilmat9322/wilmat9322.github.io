@@ -24,6 +24,8 @@ body {
 }
 `;
 
+
+
 //Propiedades de un contenedor global 
 export const FooterCon = styled.div`
 width: 100%;
