@@ -148,7 +148,7 @@ export const Span = styled.span`
     `
 
 export const BtnLink = styled.a`
-    text-decoration: none;
+margin-top: 100px
 `;
 
 

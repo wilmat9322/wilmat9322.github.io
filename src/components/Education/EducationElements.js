@@ -55,7 +55,7 @@ export const EducationColumn = styled.div`
 `;
 
 export const TextWrapper = styled.div` 
-    max-width: 505px; 
+    max-width: 968px; 
     width: 100%;
     padding-top: 0px;
     padding-bottom: 0px;

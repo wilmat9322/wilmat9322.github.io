@@ -64,7 +64,7 @@ return (
     <ExperienceSec id={id}>
         <Container>
             <Heading
-            data-aos="fade-right"
+            data-aos="fade-in"
             data-aos-once="true"
             data-aos-offset="100"
             data-aos-duration="900">
@@ -73,7 +73,7 @@ return (
 
             <TimeLineItem >
                 <ImgWrapper
-                data-aos="fade-right"
+                data-aos="fade-in"
                 data-aos-once="true"
                 data-aos-offset="300"
                 data-aos-duration="900"
@@ -83,26 +83,26 @@ return (
                 <TimeLineContent>
                     
                     <Tag
-                    data-aos="fade-right"
+                    data-aos="fade-in"
                     data-aos-once="true"
                     data-aos-offset="300"
                     data-aos-duration="900"
                     data-aos-easing="ease-in-sine">{date}</Tag>
                     <Time
-                    data-aos="fade-right"
+                    data-aos="fade-in"
                     data-aos-once="true"
                     data-aos-offset="300"
                     data-aos-duration="900"
                     data-aos-easing="ease-in-sine">{place}</Time>
                     <Text
-                    data-aos="fade-right"
+                    data-aos="fade-in"
                     data-aos-once="true"
                     data-aos-offset="300"
                     data-aos-duration="900"
                     data-aos-easing="ease-in-sine">{position}</Text>
                   
                     <TimeLink
-                    data-aos="fade-right"
+                    data-aos="fade-in"
                     data-aos-once="true"
                     data-aos-offset="300"
                     data-aos-duration="900"
@@ -117,28 +117,28 @@ return (
             <TimeLineItem2>
             <TimeLineContent2>
                 <Tag 
-                data-aos="fade-left"
+                data-aos="fade-in"
                 data-aos-once="true"
                 data-aos-offset="300"
                 data-aos-duration="900"
                 data-aos-easing="ease-in-sine">
                 {date2}</Tag>
                     <Time 
-                    data-aos="fade-left"
+                    data-aos="fade-in"
                     data-aos-once="true"
                     data-aos-offset="300"
                     data-aos-duration="900"
                     data-aos-easing="ease-in-sine">
                     {place2}</Time>
                     <Text2
-                    data-aos="fade-left"
+                    data-aos="fade-in"
                     data-aos-once="true"
                     data-aos-offset="300"
                     data-aos-duration="900"
                     data-aos-easing="ease-in-sine">
                     {position2}</Text2>
                         <TimeLink
-                        data-aos="fade-left"
+                        data-aos="fade-in"
                         data-aos-once="true"
                         data-aos-offset="300"
                         data-aos-duration="900"
@@ -151,7 +151,7 @@ return (
                 </TimeLineContent2>
                 <ImgWrapper2>
                 <TimeImg 
-                data-aos="fade-left"
+                data-aos="fade-in"
                 data-aos-once="true"
                 data-aos-offset="300"
                 data-aos-duration="900"
@@ -166,7 +166,7 @@ return (
             <TimeLineItem>
             <ImgWrapper>
                 <TimeImg 
-                data-aos="fade-right"
+                data-aos="fade-in"
                 data-aos-once="true"
                 data-aos-offset="300"
                 data-aos-duration="900"
@@ -175,21 +175,21 @@ return (
                 </ImgWrapper>
                 <TimeLineContent>
                     <Tag
-                    data-aos="fade-right"
+                    data-aos="fade-in"
                     data-aos-once="true"
                     data-aos-offset="300"
                     data-aos-duration="900"
                     data-aos-easing="ease-in-sine">
                         {date3}</Tag>
                     <Time
-                    data-aos="fade-right"
+                    data-aos="fade-in"
                     data-aos-once="true"
                     data-aos-offset="300"
                     data-aos-duration="900"
                     data-aos-easing="ease-in-sine">
                         {place3}</Time>
                     <Text
-                    data-aos="fade-right"
+                    data-aos="fade-in"
                     data-aos-once="true"
                     data-aos-offset="300"
                     data-aos-duration="900"
@@ -197,7 +197,7 @@ return (
                         {position3}</Text>
                    
                         <TimeLink
-                        data-aos="fade-right"
+                        data-aos="fade-in"
                         data-aos-once="true"
                         data-aos-offset="300"
                         data-aos-duration="900"
@@ -213,28 +213,28 @@ return (
             <TimeLineItem2>
                 <TimeLineContent2>
                     <Tag
-                    data-aos="fade-left"
+                    data-aos="fade-in"
                     data-aos-once="true"
                     data-aos-offset="300"
                     data-aos-duration="900"
                     data-aos-easing="ease-in-sine">
                         {date4}</Tag>
                     <Time
-                    data-aos="fade-left"
+                    data-aos="fade-in"
                     data-aos-once="true"
                     data-aos-offset="300"
                     data-aos-duration="900"
                     data-aos-easing="ease-in-sine">
                         {place4}</Time>
                     <Text2
-                    data-aos="fade-left"
+                    data-aos="fade-in"
                     data-aos-once="true"
                     data-aos-offset="300"
                     data-aos-duration="900"
                     data-aos-easing="ease-in-sine">
                         {position4}</Text2>
                     <Text2
-                    data-aos="fade-left"
+                    data-aos="fade-in"
                     data-aos-once="true"
                     data-aos-offset="300"
                     data-aos-duration="900"
@@ -242,7 +242,7 @@ return (
                     {mentor}</Text2>
         
                         <TimeLink
-                        data-aos="fade-left"
+                        data-aos="fade-in"
                         data-aos-once="true"
                         data-aos-offset="300"
                         data-aos-duration="900"
@@ -254,7 +254,7 @@ return (
                 </TimeLineContent2>
                 <ImgWrapper2>
                 <TimeImg 
-                data-aos="fade-left"
+                data-aos="fade-in"
                 data-aos-once="true"
                 data-aos-offset="300"
                 data-aos-duration="900"
@@ -265,7 +265,7 @@ return (
 
             <TimeLineItem>
             <ImgWrapper>
-                <TimeImg data-aos="fade-right"
+                <TimeImg data-aos="fade-in"
                   data-aos-once="true"
                   data-aos-offset="300"
                   data-aos-duration="900"
@@ -274,21 +274,21 @@ return (
                 </ImgWrapper>
                 <TimeLineContent>
                     <Tag
-                    data-aos="fade-right"
+                    data-aos="fade-in"
                     data-aos-once="true"
                     data-aos-offset="300"
                     data-aos-duration="900"
                     data-aos-easing="ease-in-sine">
                     {date5}</Tag>
                     <Time
-                    data-aos="fade-right"
+                    data-aos="fade-in"
                     data-aos-once="true"
                     data-aos-offset="300"
                     data-aos-duration="900"
                     data-aos-easing="ease-in-sine">
                     {place5}</Time>
                     <Text
-                    data-aos="fade-right"
+                    data-aos="fade-in"
                     data-aos-once="true"
                     data-aos-offset="300"
                     data-aos-duration="900"

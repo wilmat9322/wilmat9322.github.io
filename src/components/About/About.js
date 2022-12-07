@@ -33,7 +33,7 @@ import {
             <AboutColumn>
               <TextWrapper>
               <Heading
-              data-aos="fade-left"
+              data-aos="fade-in"
               data-aos-once="true"
               data-aos-offset="100"
               data-aos-duration="900">
@@ -41,7 +41,7 @@ import {
           
               </Heading>
                 <SubHeading
-                  data-aos="fade-left"
+                  data-aos="fade-in"
                   data-aos-once="true"
                   data-aos-offset="100"
                   data-aos-duration="900"
@@ -49,7 +49,7 @@ import {
                   {subHeading}
                 </SubHeading>
                 <Text
-                data-aos="fade-left"
+                data-aos="fade-in"
                 data-aos-once="true"
                 data-aos-offset="300"
                 data-aos-duration="900"

@@ -1,21 +1,17 @@
-import React, { useEffect, useRef } from 'react'
+import React, { useRef } from 'react'
 import emailjs from '@emailjs/browser';
 import AOS from "aos"; 
 import "aos/dist/aos.css"; 
 import { Container } from '../../globalStyles'
 import {
     ContactSec,
-    ContactRow,
-    ContactColumn,
     ContactContainer,
-    TextWrapper,
     Heading,
     SubHeading,
     StyledContactForm,
     InputBox,
     InputMessage,
     ButtonContainer, 
-    MessageContainer,
     Button,
     LabelName,
     LabelEmail,
@@ -29,7 +25,7 @@ const Contact = () => {
         const sendEmail = (e) => {
           e.preventDefault();
       
-          emailjs.sendForm('service_6trqpzf', 'template_a5y1lgq', form.current, 'J0rBB4_YzQLZAiRSR')
+          emailjs.sendForm('service_yeliq64', 'template_i3tjohl', form.current, 'Is6jkaIhZV8jXIJ1K')
             .then((result) => {
                 console.log(result.text);
                 console.log("message sent")
@@ -38,9 +34,7 @@ const Contact = () => {
                 console.log(error.text);
             });
         };
-        const shoot = () => {
-            alert("Great Shot!");
-          }
+  
   return (
     <>
     <ContactSec>

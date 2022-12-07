@@ -42,7 +42,7 @@ const toggleHome = () => {
     <>
     <Nav>
         <NavbarContainer>
-            <NavLogo to='/' onClick={toggleHome}>WILLLIAM
+            <NavLogo to='/' onClick={toggleHome}>WILLIAM
             <IconContext.Provider
                     value={{
                       size: "30px",

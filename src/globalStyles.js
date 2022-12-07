@@ -38,7 +38,7 @@ color: #0000;
 export const Container = styled.div`
 z-index: 1;
 width: 100%;
-max-width: 1300px;
+max-width: 1400px;
 margin-right: auto; 
 margin-left: auto;
 padding-right: 120px;
@@ -50,8 +50,8 @@ backdrop-filter: blur(30px);
 color: #0000;
 border-radius: 25px;
     @media screen and (max-width: 1200px) {
-    padding-right: 30px;
-    padding-left: 30px;
+    padding-right: 10px;
+    padding-left: 10px;
     margin-right: 30px;
     margin-left: 30px;
     }

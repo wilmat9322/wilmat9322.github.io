@@ -33,21 +33,21 @@ import {
               <AwardsColumn>
                 <TextWrapper>
                 <Heading
-                data-aos="fade-right"
+                data-aos="fade-in"
                 data-aos-once="true"
                 data-aos-offset="100"
                 data-aos-duration="900">
                  {heading}&#127942;
                 </Heading>
                   <SubHeading
-                  data-aos="fade-right"
+                  data-aos="fade-in"
                   data-aos-once="true"
                   data-aos-offset="100"
                   data-aos-duration="900">
                     {subHeading}
                   </SubHeading>
                   <Text
-                  data-aos="fade-right"
+                  data-aos="fade-in"
                   data-aos-once="true"
                   data-aos-offset="300"
                   data-aos-duration="900"

@@ -73,7 +73,7 @@ import {
          <SwiperSlide>
           <Container>   
           <Heading
-             data-aos="fade-left"
+             data-aos="fade-in"
              data-aos-once="true"
              data-aos-offset="100"
              data-aos-duration="900">
@@ -82,7 +82,7 @@ import {
             <ProjectsRow reverse={reverse}>
               <ProjectsColumn>
                 <TextWrapper
-                data-aos="fade-left"
+                data-aos="fade-in"
                 data-aos-once="true"
                 data-aos-offset="100"
                 data-aos-duration="900">
@@ -131,7 +131,7 @@ import {
                   </Tools>
 
                   <Text
-                  data-aos="fade-left"
+                  data-aos="fade-in"
                   data-aos-once="true"
                   data-aos-offset="300"
                   data-aos-duration="900"
@@ -173,7 +173,7 @@ import {
           <Container>   
           
           <Heading
-             data-aos="fade-left"
+             data-aos="fade-in"
              data-aos-once="true"
              data-aos-offset="100"
              data-aos-duration="900">
@@ -182,7 +182,7 @@ import {
             <ProjectsRow reverse={reverse}>
               <ProjectsColumn>
                 <TextWrapper
-                data-aos="fade-left"
+                data-aos="fade-in"
                 data-aos-once="true"
                 data-aos-offset="100"
                 data-aos-duration="900">
@@ -196,7 +196,7 @@ import {
                   </Tools>
 
                   <Text
-                  data-aos="fade-left"
+                  data-aos="fade-in"
                   data-aos-once="true"
                   data-aos-offset="300"
                   data-aos-duration="900"
@@ -238,7 +238,7 @@ import {
           <Container>   
           
           <Heading
-             data-aos="fade-left"
+             data-aos="fade-in"
              data-aos-once="true"
              data-aos-offset="100"
              data-aos-duration="900">
@@ -247,7 +247,7 @@ import {
             <ProjectsRow reverse={reverse}>
               <ProjectsColumn>
                 <TextWrapper
-                data-aos="fade-left"
+                data-aos="fade-in"
                 data-aos-once="true"
                 data-aos-offset="100"
                 data-aos-duration="900">
@@ -261,7 +261,7 @@ import {
                   </Tools>
 
                   <Text
-                  data-aos="fade-left"
+                  data-aos="fade-in"
                   data-aos-once="true"
                   data-aos-offset="300"
                   data-aos-duration="900"
@@ -303,7 +303,7 @@ import {
           <Container>   
           
           <Heading
-             data-aos="fade-left"
+             data-aos="fade-in"
              data-aos-once="true"
              data-aos-offset="100"
              data-aos-duration="900">
@@ -312,7 +312,7 @@ import {
             <ProjectsRow reverse={reverse}>
               <ProjectsColumn>
                 <TextWrapper
-                data-aos="fade-left"
+                data-aos="fade-in"
                 data-aos-once="true"
                 data-aos-offset="100"
                 data-aos-duration="900">
@@ -326,7 +326,7 @@ import {
                   </Tools>
 
                   <Text
-                  data-aos="fade-left"
+                  data-aos="fade-in"
                   data-aos-once="true"
                   data-aos-offset="300"
                   data-aos-duration="900"
