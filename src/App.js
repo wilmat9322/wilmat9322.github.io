@@ -20,10 +20,10 @@ const App = () => {
       <About {...sectionAbout}/>
       <Education {...sectionEducation}/>
       <Awards {...sectionAwards}/>
-      {/* <Skills {...sectionSkills}/>
+      <Skills {...sectionSkills}/>
       <Projects {...sectionProjects}/>
       <Experiences {...sectionExperiences}/>
-      <Contact /> */}
+      <Contact />
       <Footer />
    </Router>
   );
