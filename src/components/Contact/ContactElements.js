@@ -49,8 +49,8 @@ export const ContactColumn = styled.div`
     padding-top: 0px;
     padding-left: 0px; 
     flex: 1;
-    max-width: 50%; 
-    flex-basis: 50%; 
+    max-width: 100%; 
+    flex-basis: 100%; 
     
     
     @media screen and (max-width: 968px) {
@@ -119,7 +119,7 @@ export const Heading = styled(motion.h1)`
 
 export const SubHeading = styled(motion.p)` 
     margin-top: 10px; 
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     font-size: 26px; 
     font-weight: 600;
     width: 100%;
@@ -147,18 +147,30 @@ export const SubHeading = styled(motion.p)`
     }
 `;
 
+export const StyledContactForm = styled.div`
+  width: 500px;
+  margin: 0 auto 0 auto;
+
+  form {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 100%;
+    font-size: 16px;
+  }
+`
+
 export const InputBox = styled.input`
     display: flex;
-    padding: 10px;
     margin-bottom: 10px;
-    display: flex;
-    width: 90%;
-    border-color: red;
+    width: 100%;
+    height: 35px;
+    padding: 7px;
+    outline: none;
     &:focus {
     outline: none;
-    border-color: red;
+    border-color: #DA2D2D;
   }
-
 
     @media screen and (max-width: 968px) {
     font-size: 15px;
@@ -184,15 +196,18 @@ flex-direction: column;
 `;
 
 export const InputMessage = styled.textarea`
+    max-width: 100%;
+    min-width: 100%;
+    width: 100%;
+    padding: 7px;
+    outline: none;
     padding: 10px;
     display: flex;
-    width: 100%;
     height: 155px;
     resize: none;
-    border-color: red;
     &:focus {
     outline: none;
-    border-color: red;
+    border-color: #DA2D2D;
   }
 `  
 
@@ -221,7 +236,7 @@ export const Button = styled.button`
     &:hover {  
         transition: all 0.3s ease-out;
         color: #fff; 
-        background: red; 
+        background: #DA2D2D; 
     }
 
     @media screen and (max-width: 968px) {
