@@ -22,7 +22,7 @@ export const Sidebar = ({isOpen, toggle}) => {
 
         </SidebarMenu>
         <SideBtnWrap>
-            <SidebarRoute to='/contactme' onClick={toggle}>Contact me</SidebarRoute>
+            <SidebarRoute to="contact" onClick={toggle} smooth={true} duration={500} spy={true} exact='true' offset={-80}>Contact me</SidebarRoute>
         </SideBtnWrap>
         </SidebarWrapper>
     </SidebarContainer>

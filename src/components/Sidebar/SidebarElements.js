@@ -79,7 +79,7 @@ export const SideBtnWrap = styled.div`
     }
 `
 
-export const SidebarRoute = styled(LinkR)`
+export const SidebarRoute = styled(LinkS)`
     border-radius: 50px;
     background: red;
     white-space: nowrap;
