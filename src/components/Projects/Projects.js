@@ -62,7 +62,7 @@ import {
         spaceBetween={10}
         centeredSlides={true}
         autoplay={{
-          delay: 6500,
+          delay: 4500,
           disableOnInteraction: true,
         }}
         

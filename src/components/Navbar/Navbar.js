@@ -96,7 +96,8 @@ const toggleHome = () => {
                 </NavItem>
             </NavMenu>
             <NavBtn>
-                <NavBtnLink href="mailto:wmato002@odu.edu">Contact me 
+                <NavBtnLink to="contact"
+                    smooth={true} duration={500} spy={true} exact='true' offset={-80}>Contact me 
                 <IconContext.Provider
                     value={{
                       size: "18px",

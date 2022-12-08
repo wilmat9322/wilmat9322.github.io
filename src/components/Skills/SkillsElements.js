@@ -8,6 +8,30 @@ export const SkillSec = styled.div`
   flex-direction: column;
   justify-content: center;
   height: 100%;
+
+  @media screen and (max-width: 1200px) {
+    padding-top: 30px;
+    max-width: 100%;
+    flex-basis: 100%;
+    display: flex;
+    justify-content: center;
+    }
+
+  @media screen and (max-width: 768px) {
+    padding-top: 30px;
+    max-width: 100%;
+    flex-basis: 100%;
+    display: flex;
+    justify-content: center;
+    }
+
+  @media screen and (max-width: 600px) {
+    padding-top: 30px;
+    max-width: 100%;
+    flex-basis: 100%;
+    display: flex;
+    justify-content: center;
+    }
 `;
 
 export const SkillWrapper = styled.div`
@@ -23,9 +47,8 @@ export const SkillWrapper = styled.div`
   margin-right: auto; 
   margin-left: auto;
   padding-right: 120px;
-padding-left: 120px;
+  padding-left: 120px;
 
-padding-bottom: 70px;
   @media screen and (max-width: 1200px) {
     display: flex;
     flex-direction: column;

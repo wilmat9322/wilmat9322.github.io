@@ -134,7 +134,7 @@ export const NavBtn = styled.nav`
     
 `
 
-export const NavBtnLink = styled.a`
+export const NavBtnLink = styled(LinkS)`
     padding: 10px 22px;
     border-radius: 10px;
     white-space: nowrap;

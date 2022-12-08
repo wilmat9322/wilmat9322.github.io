@@ -6,7 +6,7 @@ padding: 70px 0px 0px;
 background: #000;
     
     @media screen and (max-width: 1200px) {
-    padding-top: 60px;
+    padding-top: 30px;
     max-width: 100%; 
     flex-basis: 100%; 
     display: flex; 
@@ -15,7 +15,7 @@ background: #000;
     }
     
     @media screen and (max-width: 768px) {
-    padding-top: 60px;
+    padding-top: 30px;
     max-width: 100%;
     flex-basis: 100%;
     display: flex;
@@ -23,6 +23,7 @@ background: #000;
     }
     
     @media screen and (max-width: 600px) { 
+    padding-top: 30px;
     max-width: 100%;
     flex-basis: 100%;
     display: flex;

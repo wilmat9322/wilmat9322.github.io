@@ -7,7 +7,7 @@ background: #000;
 
     
     @media screen and (max-width: 1200px) {
-    padding-top: 70px;
+    padding-top: 30px;
     max-width: 100%; 
     flex-basis: 100%; 
     display: flex; 
@@ -16,7 +16,7 @@ background: #000;
     }
     
     @media screen and (max-width: 768px) {
-    padding-top: 70px;
+    padding-top: 30px;
     max-width: 100%;
     flex-basis: 100%;
     display: flex;
@@ -24,7 +24,7 @@ background: #000;
     }
     
     @media screen and (max-width: 600px) { 
-    padding-top: 70px;
+    padding-top: 30px;
     max-width: 100%;
     flex-basis: 100%;
     display: flex;
@@ -33,6 +33,7 @@ background: #000;
 `;
 
 export const ProjectContainer = styled.div` 
+   z-index: 1;
    background: linear-gradient(-50.49deg, rgba(255, 255, 255, 0.03) 81.89%, rgba(196, 196, 196, 0.18) 100.01%);
 color: #0000;
 border-radius: 25px;
@@ -101,7 +102,7 @@ export const Heading = styled(motion.h1)`
     text-align: center;
     color: #fff; 
     padding-top: 30px;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
     
     @media screen and (max-width: 1200px) {
         justify:center;

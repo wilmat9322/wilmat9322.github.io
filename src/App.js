@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import GlobalStyle from './globalStyles' //Modulo que carga estilos globales NO TOCAR
 import {Navbar, Sidebar, Hero, About, Education, Awards, Skills, Projects, Experiences, Contact, Footer} from './components/manager';
 import {BrowserRouter as Router} from 'react-router-dom'
-import { sectionHero, sectionAbout, sectionEducation, sectionAwards, sectionSkills, sectionProjects, sectionExperiences } from './data/homeData';
+import { sectionHero, sectionAbout, sectionEducation, sectionAwards, sectionSkills, sectionProjects, sectionExperiences, sectionContact} from './data/homeData';
 
 
 const App = () => {
@@ -23,7 +23,7 @@ const App = () => {
       <Skills {...sectionSkills}/>
       <Projects {...sectionProjects}/>
       <Experiences {...sectionExperiences}/>
-      <Contact /> 
+      <Contact {...sectionContact}/> 
       <Footer />
    </Router>
   );

@@ -8,31 +8,31 @@ height: 100%;
 background-size: cover; 
     
     @media screen and (max-width: 1200px) {
-    padding-top: 20px;
+    padding-top: 30px;
     max-width: 100%; 
     flex-basis: 100%; 
     display: flex; 
     justify-content: center; 
     bottom: 0; 
-    display: none;
+   
     }
     
     @media screen and (max-width: 768px) {
-    padding-top: 20px;
+    padding-top: 30px;
     max-width: 100%;
     flex-basis: 100%;
     display: flex;
     justify-content: center;
-    display: none;
+   
     }
     
     @media screen and (max-width: 600px) { 
-    padding-top: 20px;
+    padding-top: 30px;
     max-width: 100%;
     flex-basis: 100%;
     display: flex;
     justify-content: center;
-    display: none;
+   
     }
 `;
 
@@ -77,10 +77,7 @@ export const ImgWrapper = styled.div`
     display: flex;
     justify-content: flex-start;
 
-    @media screen and (max-width: 968px) {
-    flex-direction: column;
-    max-width: 500px;
-    padding-left: 10px;
+    @media screen and (max-width: 1200px) {
     display: none;
     }
 `;
@@ -94,11 +91,10 @@ export const ImgWrapper2 = styled.div`
     bottom: 0;
     display: flex;
     justify-content: flex-start;
-
-    @media screen and (max-width: 968px) {
+    @media screen and (max-width: 1200px) {
     display: none;
-    flex-direction: column;
     }
+ 
 `;
 
 
@@ -112,11 +108,7 @@ padding-right: 0;
     vertical-align: middle; 
     border-radius: 100%;
     
-    @media screen and (max-width: 600px) {
-    display: flex;
-    flex-direction: column;
-   
-    }
+ 
     
 ` 
 
@@ -167,20 +159,6 @@ export const TimeLineItem = styled.div`
     }
 `
 
-export const TimeLineContent = styled.div` 
-    display: flex;
-    flex-direction: column;
-    padding: 15px;
-    position: relative;
-    width: 400px;
-    max-width: 100%;
-    text-align: left;
-     @media screen and (max-width: 600px) {
-        width: 100%;
-        padding: 0px;
-    }
-    
-`
 export const TimeLineItem2 = styled.div` 
    display: flex;
     justify-content: flex-end;
@@ -197,27 +175,44 @@ export const TimeLineItem2 = styled.div`
     }
  
     @media screen and (max-width: 600px) {
-       
+       padding-right: 0px;
+       padding-left: 0px; 
+       &:nth-child(even) {
+    padding-left: 0;
+    }
         width: 100%;
-        padding: 0px;
-        width: 200px;
     }
     
 `
 
+export const TimeLineContent = styled.div` 
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    position: relative;
+    width: 400px;
+    max-width: 100%;
+    text-align: left;
+     @media screen and (max-width: 600px) {
+        width: 100%;
+        padding: 0px;
+        margin-bottom: 20px;
+    }
+    
+`
 export const TimeLineContent2 = styled.div` 
     display: flex;
     flex-direction: column;
     padding: 15px;
     position: relative;
     width: 400px;
-    max-width: 70%;
+    max-width: 100%;
     text-align: left;
     @media screen and (max-width: 600px) {
         width: 100%;
         padding: 0px;
-        width: 200px;
-    }
+        margin-bottom: 20px;
+}
 `
 
 export const Tag = styled.span` 

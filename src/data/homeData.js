@@ -109,3 +109,7 @@ export const sectionExperiences = {
     img5: require('../images/econo.png'),
 
 };
+
+export const sectionContact= {
+	id: 'contact',    
+};

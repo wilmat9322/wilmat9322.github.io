@@ -1,6 +1,5 @@
 import React, { useRef } from 'react'
 import emailjs from '@emailjs/browser';
-import AOS from "aos"; 
 import "aos/dist/aos.css"; 
 import { Container } from '../../globalStyles'
 import {
@@ -19,7 +18,10 @@ import {
     LabelMessage,
 } from './ContactElements';
 
-const Contact = () => {
+const Contact = (props) => {
+    const {
+        id,
+      } = props;
         const form = useRef();
     
         const sendEmail = (e) => {
@@ -37,7 +39,7 @@ const Contact = () => {
   
   return (
     <>
-    <ContactSec>
+    <ContactSec id={id}>
         <Container>
             <ContactContainer>
             <Heading
