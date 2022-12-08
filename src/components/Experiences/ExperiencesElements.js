@@ -14,6 +14,7 @@ background-size: cover;
     display: flex; 
     justify-content: center; 
     bottom: 0; 
+    display: none;
     }
     
     @media screen and (max-width: 768px) {
@@ -22,6 +23,7 @@ background-size: cover;
     flex-basis: 100%;
     display: flex;
     justify-content: center;
+    display: none;
     }
     
     @media screen and (max-width: 600px) { 
@@ -30,6 +32,7 @@ background-size: cover;
     flex-basis: 100%;
     display: flex;
     justify-content: center;
+    display: none;
     }
 `;
 

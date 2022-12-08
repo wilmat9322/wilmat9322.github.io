@@ -21,7 +21,7 @@ export const sectionAbout = {
 
 export const sectionEducation = {
 	id: 'education',
-    heading: 'Education🎓',
+    heading: 'Education',
 	subHeading: '',
 	text: "I completed my undergraduate studies at the Interamerican University of Puerto Rico-Barranquitas and obtained my Bachelor's degree in Computer Science with a Minor Concentration in Videogame Design and Development. When I got accepted to the CyberLEADERs Program (SFS), I moved to Norfolk, VA, to pursue a Master's in Cybersecurity at Old Dominion University. I am expected to graduate in May 2024. With this opportunity, I aim to work for the government, get as many certifications as possible, and prepare myself to be the professional I aspire to be.",
     //I have a Bachelor's Degree in Computer Science. I am also a recipient of the CyberCorps Scholarship for Service (SFS). I recently moved to Norfolk, Virginia to pursue a Master's in Cybersecurity
@@ -41,7 +41,7 @@ export const sectionAwards = {
 
 export const sectionSkills = {
 	id: 'skills',
-    heading: 'Skills 🛠️',
+    heading: 'Skills',
 	subHeading: 'Below are some of my technical and soft skills.',
     img1: require('../images/binary-code.png'),
     img2: require('../images/hacker.png'),
@@ -72,7 +72,7 @@ export const sectionProjects = {
 
     subHeading4: 'Using Torchattacks to Improve the Robustness of Models with Adversarial Training ',
 	text4: "Adversarial training has proven to be one of the most successful ways to defend models against adversarial examples. This process consists of training a model with an adversarial example to improve the robustness of the model. In this experiment, Torchattacks, a Pytorch library made for importing adversarial examples more easily, was used to determine which attack was the strongest.",
-    img4:require('../images/cifar10.png'),
+    img4:require('../images/cifar_10.png'),
 };
 
 export const sectionExperiences = {

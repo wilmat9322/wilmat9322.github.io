@@ -4,9 +4,10 @@ import {motion} from 'framer-motion';
 export const ProjectsSec = styled.div` 
 padding: 70px 0px 0px; 
 background: #000;
+
     
     @media screen and (max-width: 1200px) {
-    padding-top: 60px;
+    padding-top: 70px;
     max-width: 100%; 
     flex-basis: 100%; 
     display: flex; 
@@ -15,7 +16,7 @@ background: #000;
     }
     
     @media screen and (max-width: 768px) {
-    padding-top: 60px;
+    padding-top: 70px;
     max-width: 100%;
     flex-basis: 100%;
     display: flex;
@@ -23,7 +24,7 @@ background: #000;
     }
     
     @media screen and (max-width: 600px) { 
-    padding-top: 20px;
+    padding-top: 70px;
     max-width: 100%;
     flex-basis: 100%;
     display: flex;
@@ -31,9 +32,33 @@ background: #000;
     }
 `;
 
+export const ProjectContainer = styled.div` 
+   background: linear-gradient(-50.49deg, rgba(255, 255, 255, 0.03) 81.89%, rgba(196, 196, 196, 0.18) 100.01%);
+color: #0000;
+border-radius: 25px;
+  width: 100%;
+  max-width: 1300px;
+  margin-right: auto; 
+  margin-left: auto;
+  padding-right: 120px;
+padding-left: 120px;
+padding-bottom: 70px;
+@media screen and (max-width: 1200px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-right: 10px;
+    padding-left: 10px;
+    margin-right: auto; 
+    margin-left: auto;
+    border-radius: 0px;
+  }
+
+`;
+
 export const ProjectsRow = styled.div` 
     display: flex;
-    margin: 0 15px 0px 15px; 
+    margin: 0px 15px 0px 15px; 
     flex-wrap: wrap; 
     align-items: center; 
     flex-direction: ${({ reverse }) => (reverse ? 'row-reverse' : 'row')};
@@ -42,7 +67,6 @@ export const ProjectsRow = styled.div`
 export const ProjectsColumn = styled.div`  
     bottom: 0;
     padding-top: 0px;
-  
     flex: 1;
     max-width: 50%; 
     flex-basis: 50%; 
@@ -76,14 +100,16 @@ export const Heading = styled(motion.h1)`
     font-weight: 600; 
     text-align: center;
     color: #fff; 
-    margin-top: -30px;
-    margin-bottom: 30px;
+    padding-top: 30px;
+    margin-bottom: 50px;
     
-    @media screen and (max-width: 968px) {
+    @media screen and (max-width: 1200px) {
         justify:center;
         text-align: center;
         font-size: 50px;
         width: 100%;
+        margin-top: 30px;
+        margin-bottom: 30px;
     }
     
     @media screen and (max-width: 768px) {
@@ -91,14 +117,18 @@ export const Heading = styled(motion.h1)`
         text-align: center;
         font-size: 60px;
         width: 100%;
+        margin-top: 30px;
+        margin-bottom: 0px;
     }
     
     @media screen and (max-width: 600px) {
         font-size: 35px;
         justify:center;
         text-align: center;
-        margin-top: 10px;
+        margin-top: 30px;
+        margin-bottom: 20px;
         width: 100%;
+        padding-top: 0px;
     }
 `;
 
@@ -120,6 +150,7 @@ export const SubHeading = styled(motion.p)`
     }
     
     @media screen and (max-width: 600px) {
+        margin-top: 0px; 
         font-size: 20px;
         margin-left: 15px;
         margin-right: 15px;
@@ -206,7 +237,7 @@ export const ToolImage = styled.img`
 `;
 
 export const ToolWrapper = styled.a`
-
+text-decoration: none;
 `;
 
 export const ButtonContainer = styled.a`
@@ -239,13 +270,7 @@ export const Button = styled.button`
     width: 100%;
     }
 
-    @media screen and (max-width: 968px) {
-    font-size: 18px;
-    max-width: 200px;
-    width: 100%;
-    margin: 20px auto 0 auto;
-    
-    }
+ 
 
     @media screen and (max-width: 600px) {
     font-size: 15px;
@@ -264,7 +289,7 @@ export const ImgWrapper = styled.div`
     justify-content: flex-start;
     width: 100%;
 
-    @media screen and (max-width: 968px) {
+    @media screen and (max-width: 1200px) {
     max-width: 500px;
     }
 `;

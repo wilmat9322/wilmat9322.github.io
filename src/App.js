@@ -23,7 +23,7 @@ const App = () => {
       <Skills {...sectionSkills}/>
       <Projects {...sectionProjects}/>
       <Experiences {...sectionExperiences}/>
-      <Contact />
+      <Contact /> 
       <Footer />
    </Router>
   );

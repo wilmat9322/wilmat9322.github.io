@@ -1,5 +1,4 @@
 import React from 'react'
-import { Container } from '../../globalStyles'
 
 import {
   SkillSec,
@@ -34,7 +33,7 @@ const Skills = (props) => {
   return (
     <>
         <SkillSec id={id}>
-          <Container>
+         
           <SkillWrapper>
             <Heading
             data-aos="fade-in"
@@ -129,7 +128,7 @@ const Skills = (props) => {
                   </SkillCard>
                 </SkillContainer>            
             </SkillWrapper>
-          </Container>
+         
         </SkillSec>
     </>
   )

@@ -23,7 +23,6 @@ background: #000;
     }
     
     @media screen and (max-width: 600px) { 
-    padding-top: 20px;
     max-width: 100%;
     flex-basis: 100%;
     display: flex;
@@ -68,7 +67,6 @@ export const TextWrapper = styled.div`
     padding-left: 0px;
     padding-right: 0px;
     }
-
 `;
 
 export const Heading = styled(motion.h1)` 
@@ -79,6 +77,7 @@ export const Heading = styled(motion.h1)`
     width: 100%; 
     
     @media screen and (max-width: 968px) {
+        margin-top: 50px;
         justify:center;
         text-align: center;
         font-size: 50px;
@@ -86,6 +85,7 @@ export const Heading = styled(motion.h1)`
     }
     
     @media screen and (max-width: 768px) {
+        margin-top: 50px;
         justify:center;
         text-align: center;
         font-size: 60px;
@@ -111,6 +111,7 @@ export const SubHeading = styled(motion.p)`
     color: #fff; 
     
     @media screen and (max-width: 968px) {
+        margin-top: 50px;
         font-size: 30px;
         max-width: 100%;
         flex-basis: 100%;
@@ -120,7 +121,8 @@ export const SubHeading = styled(motion.p)`
     }
     
     @media screen and (max-width: 600px) {
-        font-size: 20px;
+        margin-top: 20px;
+        font-size: 18px;
         margin-left: 15px;
         margin-right: 15px;
         width: 100%;
@@ -147,7 +149,8 @@ export const Text = styled(motion.p)`
     }
     
     @media screen and (max-width: 600px) {
-        margin-top: -10px;
+        margin-left: 10px;
+        margin-right: 10px;
         font-size: 16px;
         width: 100%;
         flex-basis: 100%;
@@ -164,7 +167,6 @@ export const ImgWrapper = styled.div`
     display: flex;
     justify-content: flex-start;
     padding-left: 20px;
-
     @media screen and (max-width: 968px) {
     max-width: 500px;
     padding-left: 0px;

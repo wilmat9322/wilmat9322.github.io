@@ -1,11 +1,9 @@
-import React, { useEffect, useState } from 'react'
-import AOS from "aos"; 
+import React from 'react'
 import "aos/dist/aos.css"; 
-import { Container } from '../../globalStyles'
 import { IconContext } from 'react-icons/lib';
 import { AiFillPlayCircle } from "react-icons/ai";
 import { IoDocumentText } from "react-icons/io5";
-import SwiperCore, { EffectCoverflow, Pagination } from "swiper";
+import { Pagination } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Navigation } from "swiper";
 import "swiper/swiper-bundle.min.css";
@@ -14,6 +12,7 @@ import "swiper/swiper.min.css";
 
 import {
     ProjectsSec,
+    ProjectContainer,
     ProjectsRow,
     ProjectsColumn,
     TextWrapper,
@@ -57,27 +56,26 @@ import {
     return (
         <>
         <ProjectsSec id={id}>  
-        <Swiper
-        spaceBetween={30}
+        <Swiper 
+        
+        speed={800}
+        spaceBetween={10}
         centeredSlides={true}
         autoplay={{
           delay: 6500,
-          disableOnInteraction: false,
+          disableOnInteraction: true,
         }}
-        pagination={{
-          clickable: true,
-          opacity: false,
-        }}
+        
         
         modules={[Autoplay, Pagination, Navigation]}> 
          <SwiperSlide>
-          <Container>   
+          <ProjectContainer>   
           <Heading
              data-aos="fade-in"
              data-aos-once="true"
              data-aos-offset="100"
              data-aos-duration="900">
-                 {heading}&#128213;
+                 {heading}
                 </Heading>
             <ProjectsRow reverse={reverse}>
               <ProjectsColumn>
@@ -166,18 +164,18 @@ import {
               </ProjectsColumn>
             </ProjectsRow>
          
-          </Container>
+          </ProjectContainer>
           </SwiperSlide>
 
           <SwiperSlide>
-          <Container>   
+          <ProjectContainer>   
           
           <Heading
              data-aos="fade-in"
              data-aos-once="true"
              data-aos-offset="100"
              data-aos-duration="900">
-                 {heading}&#128213;
+                 {heading}
                 </Heading>
             <ProjectsRow reverse={reverse}>
               <ProjectsColumn>
@@ -231,18 +229,18 @@ import {
               </ProjectsColumn>
             </ProjectsRow>
          
-          </Container>
+          </ProjectContainer>
           </SwiperSlide>
 
           <SwiperSlide>
-          <Container>   
+          <ProjectContainer>   
           
           <Heading
              data-aos="fade-in"
              data-aos-once="true"
              data-aos-offset="100"
              data-aos-duration="900">
-                 {heading}&#128213;
+                 {heading}
                 </Heading>
             <ProjectsRow reverse={reverse}>
               <ProjectsColumn>
@@ -296,18 +294,18 @@ import {
               </ProjectsColumn>
             </ProjectsRow>
          
-          </Container>
+          </ProjectContainer>
           </SwiperSlide>
 
           <SwiperSlide>
-          <Container>   
+          <ProjectContainer>   
           
           <Heading
              data-aos="fade-in"
              data-aos-once="true"
              data-aos-offset="100"
              data-aos-duration="900">
-                 {heading}&#128213;
+                 {heading}
                 </Heading>
             <ProjectsRow reverse={reverse}>
               <ProjectsColumn>
@@ -361,7 +359,7 @@ import {
               </ProjectsColumn>
             </ProjectsRow>
          
-          </Container>
+          </ProjectContainer>
           </SwiperSlide>
           </Swiper>  
         </ProjectsSec>

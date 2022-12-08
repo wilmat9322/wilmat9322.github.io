@@ -20,9 +20,9 @@ body {
     padding: 0;
 }
 :root{
---swiper-theme-color: #DA2D2D;
+--swiper-theme-color: #fff;
 }
-`;
+;`
 
 
 
@@ -38,7 +38,7 @@ color: #0000;
 export const Container = styled.div`
 z-index: 1;
 width: 100%;
-max-width: 1400px;
+max-width: 1300px;
 margin-right: auto; 
 margin-left: auto;
 padding-right: 120px;
@@ -50,20 +50,17 @@ backdrop-filter: blur(30px);
 color: #0000;
 border-radius: 25px;
     @media screen and (max-width: 1200px) {
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     padding-right: 10px;
     padding-left: 10px;
-    margin-right: 30px;
-    margin-left: 30px;
-    }
-    
-    @media screen and (max-width: 600px) {
-    padding-top: 20px;
-    padding-bottom: 20px;
-    padding-right: 0px;
-    padding-left: 0px;
-    margin-right: 30px;
-    margin-left: 30px;
-    }
+    margin-right: auto; 
+    margin-left: auto;
+    border-radius: 0px;
+    backdrop-filter: blur(0px);
+  }
 `;
 
 export default GlobalStyle;

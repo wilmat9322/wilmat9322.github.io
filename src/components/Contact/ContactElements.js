@@ -6,7 +6,6 @@ padding: 70px 0px 0px;
 background: #000;
     
     @media screen and (max-width: 1200px) {
-    padding-top: 20px;
     max-width: 100%; 
     flex-basis: 100%; 
     display: flex; 
@@ -15,7 +14,6 @@ background: #000;
     }
     
     @media screen and (max-width: 968px) {
-    padding-top: 20px;
     max-width: 100%;
     flex-basis: 100%;
     display: flex;
@@ -23,7 +21,6 @@ background: #000;
     }
     
     @media screen and (max-width: 600px) { 
-    padding-top: 20px;
     max-width: 100%;
     flex-basis: 100%;
     display: flex;
@@ -158,6 +155,10 @@ export const StyledContactForm = styled.div`
     width: 100%;
     font-size: 16px;
   }
+  @media screen and (max-width: 600px) {
+        max-width: 500px;
+        width: 100%;
+    }
 `
 
 export const InputBox = styled.input`

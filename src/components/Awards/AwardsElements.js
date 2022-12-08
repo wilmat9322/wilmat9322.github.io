@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import {Link} from 'react-scroll'
 import {motion} from 'framer-motion';
 
 export const AwardsSec = styled.div` 
@@ -24,7 +23,6 @@ background: #000;
     }
     
     @media screen and (max-width: 600px) { 
-    padding-top: 20px;
     max-width: 100%;
     flex-basis: 100%;
     display: flex;
@@ -34,16 +32,23 @@ background: #000;
 
 export const AwardsRow = styled.div` 
     display: flex;
-    margin: 0 15px 0px 15px; 
+    margin: 80px 15px 80px 15px; 
     flex-wrap: wrap; 
     align-items: center; 
     flex-direction: ${({ reverse }) => (reverse ? 'row-reverse' : 'row')};
+
+    @media screen and (max-width: 968px) {
+        margin: 0px 15px 0px 15px; 
+    }
+
+    @media screen and (max-width: 600px) {
+        margin: 0px 15px 0px 15px; 
+    }
 `;
 
 export const AwardsColumn = styled.div`  
     bottom: 0;
     padding-top: 0px;
-    padding-left: 0px; 
     flex: 1;
     max-width: 50%; 
     flex-basis: 50%; 
@@ -61,10 +66,14 @@ export const TextWrapper = styled.div`
     width: 100%;
     padding-top: 0px;
     padding-bottom: 0px;
-
+    padding-left: 0px;
     @media screen and (max-width: 968px) {
     padding-bottom: 40px;  
     padding-left: 0px; 
+    }
+    @media screen and (max-width: 600px) {
+    padding-left: 0px;
+    padding-right: 0px;
     }
 `;
 
@@ -76,6 +85,7 @@ export const Heading = styled(motion.h1)`
     width: 100%; 
     
     @media screen and (max-width: 968px) {
+        margin-top: 50px;
         justify:center;
         text-align: center;
         font-size: 50px;
@@ -83,6 +93,7 @@ export const Heading = styled(motion.h1)`
     }
     
     @media screen and (max-width: 768px) {
+        margin-top: 50px;
         justify:center;
         text-align: center;
         font-size: 60px;
@@ -90,11 +101,12 @@ export const Heading = styled(motion.h1)`
     }
     
     @media screen and (max-width: 600px) {
-        font-size: 40px;
+        font-size: 35px;
         justify:center;
         text-align: center;
         margin-top: 20px;
         width: 100%;
+        line-height: 1;
     }
 `;
 
@@ -107,6 +119,7 @@ export const SubHeading = styled(motion.p)`
     color: #fff; 
     
     @media screen and (max-width: 968px) {
+        margin-top: 50px;
         font-size: 30px;
         max-width: 100%;
         flex-basis: 100%;
@@ -116,10 +129,11 @@ export const SubHeading = styled(motion.p)`
     }
     
     @media screen and (max-width: 600px) {
-        font-size: 20px;
-        margin-left: 15px;
-        margin-right: 15px;
-        width: 90%;
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-top: 20px;
+        font-size: 18px;
+        width: 100%;
         flex-basis: 100%;
         display: flex;
         flex-direction: column;
@@ -143,11 +157,10 @@ export const Text = styled(motion.p)`
     }
     
     @media screen and (max-width: 600px) {
-        margin-top: 5px;
-        margin-left: 15px;
-        margin-right: 15px;
+        margin-left: 10px;
+        margin-right: 10px;
         font-size: 16px;
-        width: 95%;
+        width: 100%;
         flex-basis: 100%;
         display: flex;
         flex-direction: column;
@@ -155,14 +168,13 @@ export const Text = styled(motion.p)`
 `;
 
 export const ImgWrapper = styled.div` 
-    padding-left: 50px;
-    max-width: 1000px;
+    max-width: 900px;
     max-height: 100%; 
     height: 100%;
     bottom: 0;
     display: flex;
     justify-content: flex-start;
-
+    padding-left: 20px;
     @media screen and (max-width: 968px) {
     max-width: 500px;
     padding-left: 0px;

@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import {Link} from 'react-scroll'
 import {motion} from 'framer-motion';
 
 export const HeroSec = styled.div` 
@@ -26,7 +25,7 @@ background-size: cover;
     }
     
     @media screen and (max-width: 600px) { 
-    padding-top: 20px;
+    padding-top: 0px;
     max-width: 100%;
     flex-basis: 100%;
     display: flex;

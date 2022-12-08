@@ -1,5 +1,4 @@
-import React, { useEffect } from 'react'
-import AOS from "aos"; 
+import React from 'react'
 import "aos/dist/aos.css"; 
 import { Container } from '../../globalStyles'
 
@@ -37,7 +36,7 @@ import {
               data-aos-once="true"
               data-aos-offset="100"
               data-aos-duration="900">
-               {heading}&#128187;
+               {heading}
           
               </Heading>
                 <SubHeading
