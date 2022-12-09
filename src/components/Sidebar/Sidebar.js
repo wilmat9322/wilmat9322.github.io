@@ -6,6 +6,7 @@ export const Sidebar = ({isOpen, toggle}) => {
   const toggleHome = () => {
     scroll.scrollToTop()
   };
+  
   return (
     <SidebarContainer isOpen={isOpen} onClick={toggle}>
         <Icon onClick={toggle}>
@@ -19,14 +20,12 @@ export const Sidebar = ({isOpen, toggle}) => {
             <SidebarLink to="projects" onClick={toggle} smooth={true} duration={500} spy={true} exact='true' offset={-80}>Projects</SidebarLink>
             <SidebarLink to="awards" onClick={toggle} smooth={true} duration={500} spy={true} exact='true' offset={-80}>Awards</SidebarLink>
             <SidebarLink to="experiences" onClick={toggle} smooth={true} duration={500} spy={true} exact='true' offset={-80}>Experience</SidebarLink>  
-
         </SidebarMenu>
         <SideBtnWrap>
             <SidebarRoute to="contact" onClick={toggle} smooth={true} duration={500} spy={true} exact='true' offset={-80}>Contact me</SidebarRoute>
         </SideBtnWrap>
         </SidebarWrapper>
     </SidebarContainer>
-    
   );
 };
 

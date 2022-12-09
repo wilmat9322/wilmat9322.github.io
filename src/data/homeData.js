@@ -14,7 +14,6 @@ export const sectionAbout = {
     heading: 'About Me',
 	subHeading: 'My name is William',
 	text: "I was born and raised in Puerto Rico. My native language is Spanish, but I speak English fluently. I am 22 years old and like coding and playing video games. I enjoy building stuff, figuring out how things work, and how to break them. Since I come from a small island, I have always had a big concern for the cybersecurity of my country. One of my biggest goals is to become an outstanding Cybersecurity professional that can improve the cybersecurity infrastructure of Puerto Rico. My primary interests are Penetration Testing and Web Application Security.",
-    //I have a Bachelor's Degree in Computer Science. I am also a recipient of the CyberCorps Scholarship for Service (SFS). I recently moved to Norfolk, Virginia to pursue a Master's in Cybersecurity
     reverse: true,
     img: require('../images/about.png'),
 };
@@ -24,10 +23,8 @@ export const sectionEducation = {
     heading: 'Education',
 	subHeading: '',
 	text: "I completed my undergraduate studies at the Interamerican University of Puerto Rico-Barranquitas and obtained my Bachelor's degree in Computer Science with a Minor Concentration in Videogame Design and Development. When I got accepted to the CyberCorps Scholarship for Service, I moved to Norfolk, VA, to pursue a Master's in Cybersecurity at Old Dominion University. I am expected to graduate in May 2024. With this opportunity, I aim to work for the government, get as many certifications as possible, and prepare myself to be the professional I aspire to be.",
-    //I have a Bachelor's Degree in Computer Science. I am also a recipient of the CyberCorps Scholarship for Service (SFS). I recently moved to Norfolk, Virginia to pursue a Master's in Cybersecurity
     reverse: false,
     img: require('../images/education.png'),
-
 };
 
 export const sectionAwards = {
@@ -43,13 +40,16 @@ export const sectionSkills = {
 	id: 'skills',
     heading: 'Skills',
 	subHeading: 'Below are some of my technical and soft skills.',
+
     img1: require('../images/binary-code.png'),
-    img2: require('../images/hacker.png'),
-    img3: require('../images/solution.png'),
     channelTitle:'Programming',
     channelDesc:'C++, Python, SQL, HTML5, CSS, JavaScript, ReactJS, Microsoft Visual Basic',
+
+    img2: require('../images/hacker.png'),
     channelTitle2:'Cybersecurity',
     channelDesc2:'NMAP, Nessus, Wireshark, Burpsuit, Snort, Bash, Powershell Scripting, Autopsy, ProDiscover, FTK Imager, and Recuva',
+
+    img3: require('../images/solution.png'),
     channelTitle3:'Soft Skills',
     channelDesc3:'Good writing, communication, teamwork, critical thinking, and time management skills',
 };

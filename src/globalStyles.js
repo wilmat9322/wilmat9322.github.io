@@ -1,10 +1,7 @@
 import styled, {createGlobalStyle} from 'styled-components'
 import {Link} from 'react-scroll'
 
-//Aquí se encuentran todos los estilos globales que pueden ser llamados en los archivos que terminan en .elements.js
-
 const GlobalStyle = createGlobalStyle`
-/* Propiedades para toda la página, asigna fuente de letra y ajusta espacios demás */
 
 * {
     box-sizing: border-box;
@@ -13,7 +10,6 @@ const GlobalStyle = createGlobalStyle`
     font-family: 'Poppins', 'Source Sans Pro', sans-serif;
     font-weight: 500;
 }
-//Propiedades del cuerpo de la página para que no tenga espacios de más
 body {
     width: 100%;
     margin: 0;
@@ -24,9 +20,6 @@ body {
 }
 ;`
 
-
-
-//Propiedades de un contenedor global 
 export const FooterCon = styled.div`
 width: 100%;
 margin-right: auto; 
