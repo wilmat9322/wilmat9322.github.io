@@ -167,7 +167,7 @@ export const SkillCard = styled.div`
   text-decoration: none;
   border-radius: 6px;
   &:nth-child(3n) { 
-    margin: 24px;
+   
   }
 
 `;

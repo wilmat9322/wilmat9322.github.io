@@ -49,7 +49,7 @@ const Hero = (props) => {
               data-aos-once="true"
               data-aos-offset="100"
               data-aos-duration="900">
-             {heading}&#128512;&#9996;
+             {heading}&#128513;&#9996;
             </Heading>
               <SubHeading
                 data-aos="fade-right"
@@ -66,7 +66,7 @@ const Hero = (props) => {
               {text}<Span></Span>
               <Typewriter
               options={{
-              strings: ['Welcome to my e-portfolio', 'Graduate Student', 'Cybersecurity Student', 'Computer Science Graduate', 'Web Developer', 'CyberLEADERs SFS Recipient'],
+              strings: ['Welcome to my e-portfolio', 'Graduate Student', 'Cybersecurity Student', 'Computer Science Graduate', 'Web Developer', 'CyberCorps SFS Recipient'],
               autoStart: true,
               loop: true,
               delay: 100,
