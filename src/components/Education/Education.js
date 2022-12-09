@@ -1,5 +1,4 @@
-import React, { useEffect } from 'react'
-import AOS from "aos"; 
+import React from 'react'
 import "aos/dist/aos.css"; 
 import { Container } from '../../globalStyles'
 
