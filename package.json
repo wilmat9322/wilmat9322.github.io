@@ -1,6 +1,6 @@
 {
   "name": "react-portfolio-2022",
-  "homepage": "https://williammatos.netlify.app",
+  "homepage": ".",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
