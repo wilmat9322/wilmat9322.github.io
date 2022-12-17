@@ -1,5 +1,6 @@
 import styled from 'styled-components'
 import {Link} from 'react-scroll';
+import {motion} from 'framer-motion';
 
 export const FooterSec = styled.footer`
     background-color: #000;
