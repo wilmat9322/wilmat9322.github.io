@@ -13,7 +13,7 @@ export const sectionAbout = {
 	id: 'about',
     heading: 'About Me',
 	subHeading: 'My name is William',
-	text: "I was born and raised in Puerto Rico. My native language is Spanish, but I speak English fluently. I am 22 years old and like coding and playing video games. I enjoy building stuff, figuring out how things work, and how to break them. Since I come from a small island, I have always had a big concern for the cybersecurity of my country. One of my biggest goals is to become an outstanding Cybersecurity professional that can improve the cybersecurity infrastructure of Puerto Rico. My primary interests are Penetration Testing and Web Application Security.",
+	text: "I was born and raised in Puerto Rico. My native language is Spanish, but I speak English fluently. I am 23 years old and I like coding and playing video games. I enjoy building stuff, figuring out how things work, and how to break them. Since I come from a small island, I have always had a big concern for the cybersecurity of my country. One of my biggest goals is to become an outstanding Cybersecurity professional that can improve the cybersecurity infrastructure of Puerto Rico. My primary interests are Penetration Testing and Web Application Security.",
     reverse: true,
     img: require('../images/about.png'),
 };
