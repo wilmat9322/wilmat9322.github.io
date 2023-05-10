@@ -5,7 +5,7 @@ import { AiFillPlayCircle } from "react-icons/ai";
 import { IoDocumentText } from "react-icons/io5";
 import { Pagination } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay, Navigation } from "swiper";
+import { Autoplay, Navigation, Keyboard } from "swiper";
 import "swiper/swiper-bundle.min.css";
 import "swiper/swiper.min.css";
 
@@ -56,18 +56,20 @@ import {
     return (
         <>
         <ProjectsSec id={id}>  
-        <Swiper 
-        
-        speed={800}
+        <Swiper
+        keyboard={{
+          enabled: true,
+        }}
+        speed={1000}
         spaceBetween={10}
         centeredSlides={true}
         autoplay={{
-          delay: 4500,
+          delay: 30000,
           disableOnInteraction: true,
         }}
         
         
-        modules={[Autoplay, Pagination, Navigation]}> 
+        modules={[Keyboard, Autoplay, Pagination, Navigation]}> 
          <SwiperSlide>
           <ProjectContainer>   
           <Heading

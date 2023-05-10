@@ -31,7 +31,7 @@ export const sectionAwards = {
 	id: 'awards',    
     heading: 'Awards',
 	subHeading: 'CyberCorps SFS Program',
-	text: "The CyberCorps SFS Program is a Scholarship for Service award that provides selected students with two to three years of support. This includes a full in-state tuition scholarship, an annual stipend, and a professional development allowance. In exchange, each student must work for the federal government in select cybersecurity positions for the same number of years. My experience so far has been great. I have met my peers, and they have strong ambitions and goals. I look forward to working with them in the future.",
+	text: "The CyberCorps SFS Program is a Scholarship for Service award that provides selected students with two to three years of support. This includes a full in-state tuition scholarship, an annual stipend, and a professional development allowance. In exchange, each student must work for the federal government in select cybersecurity positions for the same number of years. My experience so far has been amazing. I have met my peers, and they have strong ambitions and goals. I look forward to working with them in the future.",
     reverse: false,
     img: require('../images/award.png'),
 };
@@ -51,7 +51,7 @@ export const sectionSkills = {
 
     img3: require('../images/solution.png'),
     channelTitle3:'Soft Skills',
-    channelDesc3:'Good writing, communication, teamwork, critical thinking, and time management skills',
+    channelDesc3:'Excelent writing, communication, teamwork, critical thinking, and time management skills',
 };
 
 export const sectionProjects = {

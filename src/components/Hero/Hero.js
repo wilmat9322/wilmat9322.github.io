@@ -69,7 +69,7 @@ const Hero = (props) => {
               strings: ['Welcome to my e-portfolio', 'Graduate Student', 'Cybersecurity Student', 'Computer Science Graduate', 'Web Developer', 'CyberCorps SFS Recipient'],
               autoStart: true,
               loop: true,
-              delay: 100,
+              delay: 150,
               cursor: "|",
                         }}/></Text>
               
