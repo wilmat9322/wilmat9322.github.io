@@ -1,3 +1,3 @@
 #Link to the site
 
-https://williammatos.netlify.app/
+https://williammatos.com
