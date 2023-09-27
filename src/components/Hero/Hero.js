@@ -74,7 +74,7 @@ const Hero = (props) => {
                         }}/></Text>
               
                 <BtnLink
-                    href="https://drive.google.com/file/d/1DT9yPbYqk_2jvFUsy7GjX0arND7yxwQ1/view?usp=share_link"
+                    href="https://drive.google.com/file/d/1_jiHsgzDhkd1ZXWFh5SU-KmuNieeLKJf/view?usp=sharing"
                     target="_blank">
                     <Button>
                     {button1} 
