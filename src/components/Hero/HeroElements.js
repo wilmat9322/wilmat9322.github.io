@@ -214,7 +214,7 @@ export const Img = styled(motion.img)`
     display: inline-block; 
     object-position: bottom;
     vertical-align: middle; 
-    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    /* -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */*/
     filter: grayscale(100%);
     border-radius: 100%;
     

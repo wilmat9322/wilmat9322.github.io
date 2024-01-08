@@ -6,14 +6,14 @@ export const sectionHero = {
     reverse: false,
 	button1: 'Download CV ',
     button2: 'Github ',
-    img: require('../images/me.png'),
+    img: require('../images/boda3.png'),
 };
 
 export const sectionAbout = {
 	id: 'about',
     heading: 'About Me',
 	subHeading: 'My name is William',
-	text: "I was born and raised in Puerto Rico. My native language is Spanish, but I speak English fluently. I am 23 years old and I like coding and playing video games. I enjoy building stuff, figuring out how things work, and how to break them. Since I come from a small island, I have always had a big concern for the cybersecurity of my country. One of my biggest goals is to become an outstanding Cybersecurity professional that can improve the cybersecurity infrastructure of Puerto Rico. My primary interests are Pentesting and Web Application Security.",
+	text: "I was born and raised in Puerto Rico. My native language is Spanish, but I speak English fluently. I am 24 years old and I like coding and playing video games. I enjoy building stuff, figuring out how things work, and how to break them. Since I come from a small island, I have always had a big concern for the cybersecurity of my country. One of my biggest goals is to become an outstanding Cybersecurity professional that can improve the cybersecurity infrastructure of Puerto Rico. My primary interests are System Administration, Pentesting and Web Application Security.",
     reverse: true,
     img: require('../images/about.png'),
 };
@@ -43,15 +43,15 @@ export const sectionSkills = {
 
     img1: require('../images/binary-code.png'),
     channelTitle:'Programming',
-    channelDesc:'C++, Python, SQL, HTML5, CSS, JavaScript, ReactJS, Microsoft Visual Basic',
+    channelDesc:'C/C++, Python, SQL, HTML5, CSS, JavaScript, ReactJS, Microsoft Visual Basic',
 
     img2: require('../images/hacker.png'),
     channelTitle2:'Cybersecurity',
-    channelDesc2:'NMAP, Nessus, Wireshark, Burpsuit, Snort, Bash, Powershell Scripting, Autopsy, ProDiscover, FTK Imager, and Recuva',
+    channelDesc2:'NMAP, Nessus, Wireshark, Burp Suite, Snort, Bash Scripting, Powershell Scripting, Autopsy, ProDiscover, FTK Imager, and Recuva',
 
     img3: require('../images/solution.png'),
     channelTitle3:'Soft Skills',
-    channelDesc3:'Excelent writing, communication, teamwork, critical thinking, and time management skills',
+    channelDesc3:'Project Management, documentation, communication, collaboration and teamwork, time Management, adaptability, excelent writing, and critical thinking.',
 };
 
 export const sectionProjects = {
@@ -78,35 +78,42 @@ export const sectionProjects = {
 export const sectionExperiences = {
 	id: 'experiences',
     heading:'Experiences',
-    date: 'June 2022 – July 2022 ',
-    place: 'Inter American University of Puerto Rico-Barranquitas',
-    position:'Position: IT Support',
-    description: 'I worked with IT Systems (Windows Computers) on college campus while giving IT Support. I troubleshooted network problems (DNS and IP Addresses) and installed, maintained, and upgraded computer hardware and software.',
-    img: require('../images/inter.png'),
 
-    date2: 'August 2021 – July 2022',
-    place2: 'Upward Bound Program',
-    position2:'Position: Computer Teacher Assistant',
-    description2: 'Worked as a computer teacher assistant to help high school students learn how to use standard computer programs and helped them develop the necessary skills to get into college.',
-    img2: require('../images/trio.png'),
+    date: 'June 2023 – August 2023 ',
+    place: 'Cybersecurity Infrastructure and Security Agency (CISA)',
+    position1:'Position: IT Cybersecurity Specialist',
+    description: 'I Worked with the Cybersecurity Division (CSD) in Threat Hunting. I gained experience with tools like: Splunk, Eric Zimmerman Tools, RegRipper, Iris, Zeek, and more.',
+    img: require('../images/CISA.png'),
 
-    date3: 'August 2021 - December 2021',
-    place3: 'Internship with DoCare LLC',
-    position3:'Position: Front-End Web Developer (Remote)',
-    description3: 'Used the System Development Cycle to create a landing page for the startup company AppLivio. The landing page was created using ReactJS, NodeJS, and Styled Components. It is fully responsive, and it was deployed using AWS Amplify. (www.applivio.com)',
-    img3: require('../images/applivio-logo.png'),
+    date2: 'June 2022 – July 2022 ',
+    place2: 'Inter American University of Puerto Rico-Barranquitas',
+    position2:'Position: IT Support',
+    description2: 'I worked with IT Systems (Windows Computers) on college campus while giving IT Support. I troubleshooted network problems (DNS and IP Addresses) and installed, maintained, and upgraded computer hardware and software.',
+    img2: require('../images/inter.png'),
 
-    date4: 'June 2021 - August 2021',
-    place4: 'Research Experiences for Undergraduate (REU) Fellow',
-    position4:'Position: Student Researcher',
-    mentor:'Mentor: Hongyi Michael Wu, PhD',
-    description4: 'I researched how adversarial examples worked and researched to find a way to defend against them. I also researched ways to improve the robustness of machine learning algorithms using adversarial training. Techniques: Using Pytorch and Torchattacks to import adversarial examples and defend against them using adversarial training “defense mechanism.”',
-    img4: require('../images/nsf.png'),
+    date3: 'August 2021 – July 2022',
+    place3: 'Upward Bound Program',
+    position3:'Position: Computer Teacher Assistant',
+    description3: 'Worked as a computer teacher assistant to help high school students learn how to use standard computer programs and helped them develop the necessary skills to get into college.',
+    img3: require('../images/trio.png'),
 
-    date5: 'February 2019 - November 2020',
-    place5: 'Econo Supermarket Barranquitas',
-    position5:'Position: Grocery Packer and Store Maintenance',
-    img5: require('../images/econo.png'),
+    date4: 'August 2021 - December 2021',
+    place4: 'Internship with DoCare LLC',
+    position4:'Position: Front-End Web Developer (Remote)',
+    description4: 'Used the System Development Cycle to create a landing page for the startup company AppLivio. The landing page was created using ReactJS, NodeJS, and Styled Components. It is fully responsive, and it was deployed using AWS Amplify. (www.applivio.com)',
+    img4: require('../images/applivio-logo.png'),
+
+
+    date5: 'June 2021 - August 2021',
+    place5: 'Research Experiences for Undergraduate (REU) Fellow',
+    position5:'Position: Student Researcher',
+    description5: 'I researched how adversarial examples worked and researched to find a way to defend against them. I also researched ways to improve the robustness of machine learning algorithms using adversarial training. Techniques: Using Pytorch and Torchattacks to import adversarial examples and defend against them using adversarial training “defense mechanism.”',
+    img5: require('../images/nsf.png'),
+
+    date6: 'February 2019 - November 2020',
+    place6: 'Econo Supermarket Barranquitas',
+    position6:'Position: Grocery Packer and Store Maintenance',
+    img6: require('../images/econo.png'),
 
 };
 

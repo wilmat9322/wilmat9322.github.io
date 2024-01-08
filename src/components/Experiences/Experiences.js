@@ -29,7 +29,7 @@ import {
       img,
       date,
       place,
-      position,
+      position1,
       description,
 
       img2,
@@ -55,6 +55,13 @@ import {
       date5,
       place5,
       position5,
+      description5,
+
+      img6,
+      date6,
+      place6,
+      position6,
+      description6,
 
       } = props;
  
@@ -98,7 +105,7 @@ return (
                     data-aos-once="true"
                     data-aos-offset="300"
                     data-aos-duration="900"
-                    data-aos-easing="ease-in-sine">{position}</Text>
+                    data-aos-easing="ease-in-sine">{position1}</Text>
                   
                     <TimeLink
                     data-aos="fade-in"
@@ -238,7 +245,7 @@ return (
                     data-aos-offset="300"
                     data-aos-duration="900"
                     data-aos-easing="ease-in-sine">
-                    {mentor}</Text2>
+                    </Text2>
         
                         <TimeLink
                         data-aos="fade-in"
@@ -293,12 +300,75 @@ return (
                     data-aos-duration="900"
                     data-aos-easing="ease-in-sine">
                     {position5}</Text>
-                        <TimeLink>
+                        <TimeLink
+                        data-aos="fade-in"
+                        data-aos-once="true"
+                        data-aos-offset="300"
+                        data-aos-duration="900"
+                        data-aos-easing="ease-in-sine">
+                        {description5}
                         </TimeLink>
+                      
         
                     <Circle/>
                 </TimeLineContent>
             </TimeLineItem>
+
+
+
+
+            <TimeLineItem2>
+                <TimeLineContent2>
+                    <Tag
+                    data-aos="fade-in"
+                    data-aos-once="true"
+                    data-aos-offset="300"
+                    data-aos-duration="900"
+                    data-aos-easing="ease-in-sine">
+                        {date6}</Tag>
+                    <Time
+                    data-aos="fade-in"
+                    data-aos-once="true"
+                    data-aos-offset="300"
+                    data-aos-duration="900"
+                    data-aos-easing="ease-in-sine">
+                        {place6}</Time>
+                    <Text2
+                    data-aos="fade-in"
+                    data-aos-once="true"
+                    data-aos-offset="300"
+                    data-aos-duration="900"
+                    data-aos-easing="ease-in-sine">
+                        {position6}</Text2>
+                    <Text2
+                    data-aos="fade-in"
+                    data-aos-once="true"
+                    data-aos-offset="300"
+                    data-aos-duration="900"
+                    data-aos-easing="ease-in-sine">
+                    {mentor}</Text2>
+        
+                        <TimeLink
+                        data-aos="fade-in"
+                        data-aos-once="true"
+                        data-aos-offset="300"
+                        data-aos-duration="900"
+                        data-aos-easing="ease-in-sine">
+                        {description6}
+                        </TimeLink>
+        
+                    <Circle2/>
+                </TimeLineContent2>
+                <ImgWrapper2>
+                <TimeImg 
+                data-aos="fade-in"
+                data-aos-once="true"
+                data-aos-offset="300"
+                data-aos-duration="900"
+                data-aos-easing="ease-in-sine"
+                src={img6}></TimeImg>
+                </ImgWrapper2>
+            </TimeLineItem2>
 
             </TimeLineContainer>           
         </Container>

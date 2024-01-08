@@ -60,6 +60,8 @@ import {
         keyboard={{
           enabled: true,
         }}
+        navigation={true}
+        
         speed={1000}
         spaceBetween={10}
         centeredSlides={true}

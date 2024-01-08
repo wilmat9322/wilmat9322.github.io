@@ -49,7 +49,7 @@ const Hero = (props) => {
               data-aos-once="true"
               data-aos-offset="100"
               data-aos-duration="900">
-             {heading}&#128513;&#9996;
+             {heading} &#128513;&#9996;
             </Heading>
               <SubHeading
                 data-aos="fade-right"
@@ -69,12 +69,12 @@ const Hero = (props) => {
               strings: ['Welcome to my e-portfolio', 'Graduate Student', 'Cybersecurity Student', 'Computer Science Graduate', 'Web Developer', 'CyberCorps SFS Recipient'],
               autoStart: true,
               loop: true,
-              delay: 150,
+              delay: 270,
               cursor: "|",
                         }}/></Text>
               
                 <BtnLink
-                    href="https://drive.google.com/file/d/1_jiHsgzDhkd1ZXWFh5SU-KmuNieeLKJf/view?usp=sharing"
+                    href="https://drive.google.com/file/d/1zHjD4d2lxsRfZ7-FnTlnojwHlmtJAlNA/view?usp=sharing"
                     target="_blank">
                     <Button>
                     {button1} 
