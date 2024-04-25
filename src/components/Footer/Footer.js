@@ -5,7 +5,6 @@ import "aos/dist/aos.css";
 import { FaLinkedin } from 'react-icons/fa';
 import { IconContext } from 'react-icons/lib';
 import { VscGithub } from "react-icons/vsc";
-import { AiFillTwitterCircle } from "react-icons/ai";
 import { RiCodeBoxFill } from "react-icons/ri";
 import {animateScroll as scroll} from "react-scroll";
 
@@ -85,15 +84,12 @@ const {
                             </FooterLinksWrapper>
                         </FooterLinksContainer>
                             <SocialIcons>
-                                <SocialIconLink href="https://www.linkedin.com/in/william-m-685a32204/" target="_blank" aria-label="Facebook">
+                                <SocialIconLink href="https://www.linkedin.com/in/william-m-685a32204/" target="_blank" aria-label="LinkedIn">
                                     <FaLinkedin />
                                         </SocialIconLink>
                                             <SocialIconLink href="https://github.com/wilmat9322" target="_blank" aria-label="Facebook">
                                                 <VscGithub />
                                             </SocialIconLink>
-                                        <SocialIconLink href="https://twitter.com/wsteven_m" target="_blank" aria-label="Facebook">
-                                                <AiFillTwitterCircle />
-                                        </SocialIconLink>
                                             </SocialIcons>
                                 </SocialMediaWrap>
                             </SocialMedia>

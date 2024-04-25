@@ -51,6 +51,10 @@ import {
       subHeading4, 
       text4,
       img4,
+
+      subHeading5, 
+      text5,
+      img5,
     } = props;
 
     return (
@@ -365,6 +369,72 @@ import {
          
           </ProjectContainer>
           </SwiperSlide>
+
+          <SwiperSlide>
+          <ProjectContainer>   
+          
+          <Heading
+             data-aos="fade-in"
+             data-aos-once="true"
+             data-aos-offset="100"
+             data-aos-duration="900">
+                 {heading}
+                </Heading>
+            <ProjectsRow reverse={reverse}>
+              <ProjectsColumn>
+                <TextWrapper
+                data-aos="fade-in"
+                data-aos-once="true"
+                data-aos-offset="100"
+                data-aos-duration="900">
+              
+                  <SubHeading>
+                    {subHeading5}
+                  </SubHeading>
+
+                  <Tools>
+                    <ToolsHeading>Research and Hands-On Projects</ToolsHeading>
+                  </Tools>
+
+                  <Text
+                  data-aos="fade-in"
+                  data-aos-once="true"
+                  data-aos-offset="300"
+                  data-aos-duration="900"
+                  data-aos-easing="ease-in-sine">
+                  {text5}</Text>
+                <ButtonContainer href="https://drive.google.com/drive/folders/1IZDBRSqrqbFcI1sjnuvUihNqF-85kL2T?usp=drive_link" target="_blank">
+                   <Button>View Projects 
+                   <IconContext.Provider
+                    value={{
+                      size: "15px",
+                      style: { verticalAlign: "middle"},
+                    }}
+                  >
+                    {" "}
+                    <IoDocumentText/>
+                    </IconContext.Provider>
+                    </Button>
+                </ButtonContainer>
+
+                </TextWrapper>
+              </ProjectsColumn>
+              <ProjectsColumn>
+                <ImgWrapper>
+                  <Img
+                  data-aos="fade-in"
+                  data-aos-once="true"
+                  data-aos-offset="100"
+                  data-aos-duration="900" 
+                  src={img5} alt="William Matos" 
+                  draggable="false"/>
+                </ImgWrapper>
+              </ProjectsColumn>
+            </ProjectsRow>
+         
+          </ProjectContainer>
+          </SwiperSlide>
+
           </Swiper>  
         </ProjectsSec>
   

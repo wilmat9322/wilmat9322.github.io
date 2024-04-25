@@ -120,9 +120,9 @@ export const WebsiteRights = styled.small`
 
 export const SocialIcons = styled.div`
     display: flex; 
-    justify-content: space-between; 
+    
     align-items: center; 
-    width: 130px;
+    width: 110px;
     transition: ease-out 0.30s;
     @media screen and (max-width: 820px) {
         margin-top: 10px;
@@ -132,6 +132,7 @@ export const SocialIcons = styled.div`
 
 export const SocialIconLink = styled.a`
     color: #fff;
+    margin-left: 10px;
     font-size: 2rem;
     &:hover {
     transform: scale(1.06);

@@ -176,7 +176,7 @@ export const SkillCardInfo = styled.div`
   font-weight: bolder;
   display: flex;
   flex-direction: column;
-  height: 500px;
+  height: 550px;
   padding: 24px;
   align-items: center;
   color: #fff;

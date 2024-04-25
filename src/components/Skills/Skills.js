@@ -23,17 +23,19 @@ const Skills = (props) => {
     img1,
     img2,
     img3,
+    img4,
     channelTitle,
     channelDesc,
     channelTitle2,
     channelDesc2,
     channelTitle3,
     channelDesc3,
+    channelTitle4,
+    channelDesc4
   } = props;
   return (
     <>
         <SkillSec id={id}>
-         
           <SkillWrapper>
             <Heading
             data-aos="fade-in"
@@ -126,7 +128,40 @@ const Skills = (props) => {
 
                     </SkillCardInfo>
                   </SkillCard>
-                </SkillContainer>            
+                </SkillContainer> 
+
+                <SkillContainer>
+                  <SkillCard>
+                    <SkillCardInfo>
+
+                      <SkillCardImg
+                      data-aos="fade-up"
+                      data-aos-once="true"
+                      data-aos-offset="100"
+                      data-aos-duration="200">
+                        <SkillImage img src={img4}/>
+                      </SkillCardImg>
+
+                      <SkillCardTitle
+                      data-aos="fade-in"
+                      data-aos-once="true"
+                      data-aos-offset="100"
+                      data-aos-duration="900">
+                        {channelTitle4}</SkillCardTitle>
+
+                      <SkillCardDesc 
+                      data-aos="fade-in"
+                      data-aos-once="true"
+                      data-aos-offset="100"
+                      data-aos-duration="900">
+                        {channelDesc4}</SkillCardDesc>
+
+                    </SkillCardInfo>
+                  </SkillCard>
+
+                  
+                  </SkillContainer>
+
             </SkillWrapper>
          
         </SkillSec>
