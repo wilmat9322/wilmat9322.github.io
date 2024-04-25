@@ -9,4 +9,5 @@ export {default as Education} from './Education/Education';
 export {default as Awards} from './Awards/Awards';
 export {default as Projects} from './Projects/Projects';
 export {default as Experiences} from './Experiences/Experiences';
+export {default as Conferences} from './Conferences/Conferences';
 export {default as Footer} from './Footer/Footer';

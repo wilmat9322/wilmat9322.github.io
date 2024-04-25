@@ -136,6 +136,22 @@ export const sectionExperiences = {
 
 };
 
+export const sectionConferences = {
+	id: 'conferences',
+    reverse: true,
+    heading: 'Conferences',
+    subHeading: 'Annual Security Conference (ASC)',
+	text: "This conferences was focused on Academic and professional discourse in security, assurance and privacy. I attended this conference in May 2023 to present a research paper that focused on Malware found in ATMs.",
+    img:require('../images/ASC.png'),
+
+    id: 'conferences',
+    reverse: true,
+    heading: 'Conferences',
+    subHeading2: 'SANS HackFest Hollywood 2023',
+	text2: "This conference was a two-day Summit that covered all aspects of the offensive side of cybersecurity like penetration testing, adversary emulation, exploitation, or red teaming. There were interesting keynotes, workshops and CTFs.",
+    img2:require('../images/SANS.png'),
+}; 
+
 export const sectionContact= {
 	id: 'contact',    
 };

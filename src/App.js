@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
 import GlobalStyle from './globalStyles'
-import {Navbar, Sidebar, Hero, About, Education, Awards, Skills, Windows, Projects, Experiences, Contact, Footer} from './components/manager';
+import {Navbar, Sidebar, Hero, About, Education, Awards, Skills, Windows, Projects, Experiences, Conferences, Contact, Footer} from './components/manager';
 import {BrowserRouter as Router} from 'react-router-dom'
-import { sectionHero, sectionAbout, sectionEducation, sectionAwards, sectionSkills, sectionWindows, sectionProjects, sectionExperiences, sectionContact} from './data/homeData';
+import { sectionHero, sectionAbout, sectionEducation, sectionAwards, sectionSkills, sectionWindows, sectionProjects, sectionExperiences, sectionConferences, sectionContact} from './data/homeData';
 
 
 const App = () => {
@@ -25,6 +25,7 @@ const App = () => {
       <Windows {...sectionWindows}/>
       <Projects {...sectionProjects}/>
       <Experiences {...sectionExperiences}/>
+      <Conferences {...sectionConferences}/>
       <Contact {...sectionContact}/> 
       <Footer />
    </Router>
