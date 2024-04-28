@@ -90,7 +90,7 @@ export const sectionProjects = {
     img4:require('../images/cifar_10.png'),
 
     subHeading5: 'CYSE695: Windows System for Cybersecurity Course',
-	text5: "This is a compitaltion of research assignments and hands-on projects where I dicsuss different topics related to Windows Server. The projects demonstrate that I was able to gain technical skills like setting up a new Windows Server 2019, using active directory, creating group golicy objects, creating users, setting up network settings, using RDP, and more. For the research assignments I was able to write about different cyberecurity matters related to Windows Server 2019, and the importance of having good practices.",
+	text5: "This is a compilation of research assignments and hands-on projects where I dicsuss different topics related to Windows Server. The projects demonstrate that I was able to gain technical skills like setting up a new Windows Server 2019, using active directory, creating group golicy objects, creating users, setting up network settings, using RDP, and more. For the research assignments I was able to write about different cyberecurity matters related to Windows Server 2019, and the importance of having good practices.",
     img5:require('../images/windows-projects.png'),
 };
 
